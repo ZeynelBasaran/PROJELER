@@ -1,0 +1,18 @@
+.baslik{
+    color:red;
+    list-style-position: inside;
+    text-align: center;
+}
+.men div{
+    text-align: center;
+    list-style: inside;
+}
+div{
+    text-align:center;display:block;
+}
+h2,ul,p,h3{
+    color: green;
+    text-align: center;display: block;
+    list-style-position: inside;
+    list-style:square
+}
