@@ -1,5 +1,0 @@
-#DENEME
-
-ÖDEV DENEMESİ
-
-
