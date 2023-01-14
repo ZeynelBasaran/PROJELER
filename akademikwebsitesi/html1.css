@@ -32,13 +32,21 @@ a:active{
 }
 
 
-#navbar{
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+.navbar li{
+    list-style: none;
+}
+.navbar ul{
     display: flex;
     justify-content: flex-end;   
+    padding-left: 5rem;
 
-}
-#navbar li{
-    list-style: none;
+
 }
 
 #foot{
