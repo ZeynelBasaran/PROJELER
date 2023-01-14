@@ -8,9 +8,37 @@
     <link rel="stylesheet" href="html1.css">
 </head>
 <body>
-    <h1>Meltem Başaran</h1>
+    <h1 id="baslik">Meltem Başaran</h1>
+
+<form action="form">
+
+    <label for="Ad" >Adı</label>
+    <input type="text" name="Ad" id="Ad" required autofocus><br>
+
+    <label for="Soyad">Soyadı</label>
+    <input type="text" name="Soyad" id="Soyad" required><br>
+
+    <label for="mail">Mail</label>
+    <input type="email" name="mail" id="mail" required><br>
 
 
+    <label for="Numara">Numara</label>
+    <input type="number" name="Numara" id="Numara" placeholder="0212-000-00-00"><br>
+
+
+    <label for="Metin">Metin</label>
+    <input type="text" id="Metin" name="metin" width="150px"><br>
+
+    <input type="radio" name="kisi" value="ögrenci" id="radio"> 
+    <label for="radio">Ögrenci</label>
+    <input type="radio" name="kisi" value="akademisyen" id="radio1">
+    <label for="radio1">Akamisyen</label><br>
+    <input type="checkbox" value="aydinünili" id="aydinli" name="aydinli">
+    <label for="aydinli">Aydın Üniversitesi Ögrencisiyim</label><br>
+    <input type="submit" value="Gönder">
+    
+
+</form>
 
 </body>
 </html>

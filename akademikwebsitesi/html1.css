@@ -13,22 +13,24 @@ a:active{
 }
 .baslikmenu{
     list-style: none;
-    direction: flex;
     padding-left: 100px;
-
 }
+
 #baslik{
     padding: 0;
     margin: 0;
     background-color: purple;
-    color: white;
-
+    color: white;   
 }
-div{
+
+.gorsel{
     display: flex;
-    justify-content: end;
-
-
-
-
+    justify-content: space-between
+}
+form{}
+.görsel{}
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    
 }
