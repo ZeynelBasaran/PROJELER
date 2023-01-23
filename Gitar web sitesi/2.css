@@ -14,5 +14,15 @@ h2,ul,p,h3{
     color: green;
     text-align: center;display: block;
     list-style-position: inside;
-    list-style:square
+    list-style:none
+}
+.hak{
+    text-align: left;
+}
+.menalt{
+    list-style-position: inside;
+    text-align: center;
+    list-style: center;
+    
+
 }
