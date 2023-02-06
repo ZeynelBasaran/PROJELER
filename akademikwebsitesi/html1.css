@@ -3,15 +3,13 @@ body{
     background-color: rgba(241,231,254);
     margin:0;
     padding: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-
 }
 a{
     text-decoration: none;
 }
 a:hover, a:link{
-    color:red
+    color:red;
+    
 }
 a:active{
     color:pink
@@ -23,16 +21,12 @@ a:active{
 
 #baslik{
    margin: 0;
-   padding: 20px;
+   padding: 25px;
     background-color: purple;
     color: white;   
     text-transform: uppercase;
 }
 
-.gorsel{
-    display: flex;
-    justify-content: space-between;
-}
 
 .navbar{
     
@@ -68,4 +62,50 @@ a:active{
 .adgiris{
     width: 200px;
     float: right;
+}
+
+input :focus{
+    box-shadow:0 0 3px 0;
+    border-color: purple;
+    box-shadow: 0 0 5 0 purple;
+}
+
+.section{
+    padding: 1rem;
+}
+.sectiongorsel{
+    list-style: none;
+    padding: 1rem;
+}
+.section h2{
+    margin:0
+
+}
+.sectionbolum3{
+    background-color: rgb(181, 118, 191);
+    margin: 0;
+    
+    
+}
+.formlar{
+    margin:100px;
+}
+.formlar input{
+    font-size: 1rem;
+    border: solid 2px purple;
+    box-shadow: 0 0 5 0;
+}
+.formlar textarea{
+    font-size: 1rem;
+    border: solid 2px purple
+}
+.btn{
+    background-color: purple;
+    border: solid white 5px;
+    color: white;
+    padding: .5em 1em;
+}
+.btn:hover, .btn:focus{
+    background-color: white;
+    color: purple;
 }
