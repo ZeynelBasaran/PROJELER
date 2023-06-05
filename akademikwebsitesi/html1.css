@@ -7,11 +7,11 @@ body{
 a{
     text-decoration: none;
 }
-a:hover, a:link{
+a:visited, a:link{
     color:red;
     
 }
-a:active{
+a:active, a:hover{
     color:pink
 }
 .baslikmenu{
@@ -27,16 +27,17 @@ a:active{
     text-transform: uppercase;
 }
 
-
 .navbar{
     
     justify-content: flex-end;
-    float: right;
+    float:right;
     
     
 }
 .navbar li{
     list-style: none;
+    padding-left: 15px;
+    float: left;
 }
 .navbar ul{
     
