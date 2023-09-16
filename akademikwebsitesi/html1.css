@@ -1,112 +1,127 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(241,231,254);
-    margin:0;
+    background-color: rgba(241, 231, 254);
+    margin: 0;
     padding: 0;
+    text-align: justify;
+
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:visited, a:link{
-    color:red;
-    
+
+a:visited,
+a:link {
+    color: red;
+
 }
-a:active, a:hover{
-    color:pink
+
+a:active,
+a:hover {
+    color: pink
 }
-.baslikmenu{
+
+.baslikmenu {
     list-style: none;
     padding-left: 100px;
 }
 
-#baslik{
-   margin: 0;
-   padding: 25px;
+#baslik {
+    margin: 0;
+    padding: 25px;
     background-color: purple;
-    color: white;   
+    color: white;
     text-transform: uppercase;
 }
 
-.navbar{
-    
-    justify-content: flex-end;
-    float:right;
-    
-    
-}
-.navbar li{
-    list-style: none;
-    padding-left: 15px;
-    float: left;
-}
-.navbar ul{
-    
-    justify-content: flex-end;   
-    padding-left: 5rem;
- display: flex;
+.navbar {
 
 }
 
-#foot{
-    padding:30px;
+.navbar button {
+    font-size: 15px;
+    padding:10px 20px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+
+
+
+
+}
+
+#foot {
+    padding: 30px;
     margin: 0;
     background-color: purple;
-    color: white;   
-    
+    color: white;
+
 }
-.formad{
+
+.formad {
     border: 5px;
     border-radius: 2rem;
     padding: 1cm;
 
 }
-.adgiris{
+
+.adgiris {
     width: 200px;
     float: right;
 }
 
-input :focus{
-    box-shadow:0 0 3px 0;
+input :focus {
+    box-shadow: 0 0 3px 0;
     border-color: purple;
     box-shadow: 0 0 5 0 purple;
 }
 
-.section{
+.section {
     padding: 1rem;
 }
-.sectiongorsel{
+
+.sectiongorsel {
     list-style: none;
     padding: 1rem;
 }
-.section h2{
-    margin:0
 
+.section h2 {
+    margin: 0
 }
-.sectionbolum3{
+
+.sectionbolum3 {
     background-color: rgb(181, 118, 191);
     margin: 0;
-    
-    
+
+
 }
-.formlar{
-    margin:100px;
+
+.formlar {
+    margin: 100px;
 }
-.formlar input{
+
+.formlar input {
     font-size: 1rem;
     border: solid 2px purple;
     box-shadow: 0 0 5 0;
 }
-.formlar textarea{
+
+.formlar textarea {
     font-size: 1rem;
     border: solid 2px purple
 }
-.btn{
+
+.btn {
     background-color: purple;
     border: solid white 5px;
     color: white;
     padding: .5em 1em;
 }
-.btn:hover, .btn:focus{
+
+.btn:hover,
+.btn:focus {
     background-color: white;
     color: purple;
 }
