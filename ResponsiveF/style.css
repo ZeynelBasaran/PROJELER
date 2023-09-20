@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 10px;
+
+
+
+}
+img {
+    height: auto;
+    width: 100%;
+}
+
+body {
+    font-family: 'Mooli', sans-serif;
+    color: white;
+    background-color: gray;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.5;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+p {
+    padding: 1.5rem;
+}
+
+header {
+    height: 46rem;
+
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(/ResponsiveF/images/2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+
+}
+
+#section-a {
+    background-color: white;
+    color: #333;
+    padding: 3.2rem 0;
+}
+#section-b{
+    padding: 2rem;
+}
+#section-b ul{
+    list-style: none;
+}
+#section-b li{
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+
+}
+.col-content{
+    padding: 1.5rem;
+}
