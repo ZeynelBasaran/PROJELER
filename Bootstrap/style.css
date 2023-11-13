@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    color: black;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+nav {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    background-color: rgb(58, 69 , 87);
+    color: #fff;
+
+}
+
+.container .logo {
+    color: #fff;
+    margin-left: 1rem;
+    margin-left: 1rem;
+
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links {
+    float: right;
+    text-decoration: none;
+    ;
+
+}
+
+.item {
+    float: right;
+    text-decoration: none;
+    margin: 1rem;
+
+}
+
+.navlink {
+    color: #fff;
+    font-size: 1.6rem;
+    display: block;
+    padding: 1.6rem;
+    transition: color 0.4s;
+
+}
+.navlink:hover{
+    color:#1abc98;
+    
+
+}
+ul{
+    list-style-type: none;
+}

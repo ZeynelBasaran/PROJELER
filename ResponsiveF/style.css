@@ -5,15 +5,31 @@
 }
 
 html {
-    font-size: 10px;
-
-
+    font-size: 7px;
 
 }
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: #666 3px solid;
+    padding: 0.7rem 2rem;
+    margin: 2rem;
+    transition: all 0.4s;
+
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
 img {
     height: auto;
     width: 100%;
 }
+
 
 body {
     font-family: 'Mooli', sans-serif;
@@ -31,7 +47,7 @@ a {
 }
 
 p {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 header {
@@ -61,18 +77,77 @@ header h1 {
     color: #333;
     padding: 3.2rem 0;
 }
-#section-b{
+
+#section-b {
     padding: 2rem;
 }
-#section-b ul{
+
+#section-b ul {
     list-style: none;
 }
-#section-b li{
+
+#section-b li {
     background-color: #fff;
     color: #333;
     margin-bottom: 1.5rem;
 
 }
-.col-content{
+
+.col-content {
     padding: 1.5rem;
+}
+
+.section-c {
+    background: #fff;
+    color: #333;
+    padding: 5rem;
+}
+
+.section-d .box {
+    padding: 5rem;
+
+}
+
+.section-d .box:first-child {
+    background-color: darkslategray;
+
+
+
+}
+
+
+footer {
+    padding: 1rem;
+    background-color: black;
+
+}
+
+footer a {
+    color: yellowgreen;
+
+}
+
+@media screen and (min-width:800px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 11px;
+    }
+
+    #section-b ul li {
+        width: 28%;
+        margin: 1%;
+        display: inline block;
+    }
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+
+
 }
