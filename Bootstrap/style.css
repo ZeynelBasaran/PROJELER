@@ -20,8 +20,9 @@ body {
 nav {
     padding-top: 3rem;
     padding-bottom: 8rem;
-    background-color: rgb(58, 69 , 87);
+    background-color: rgb(58, 69, 87);
     color: #fff;
+
 
 }
 
@@ -55,6 +56,7 @@ a {
 
 }
 
+
 .navlink {
     color: #fff;
     font-size: 1.6rem;
@@ -62,12 +64,292 @@ a {
     padding: 1.6rem;
     transition: color 0.4s;
 
-}
-.navlink:hover{
-    color:#1abc98;
-    
 
 }
-ul{
+
+.navlink:hover {
+    color: #1abc98;
+
+
+}
+
+ul {
     list-style-type: none;
+}
+
+.logo {
+    font-size: 3rem;
+
+}
+
+header {
+    font-size: 1rem;
+    background-color: #1abc98;
+
+}
+
+.logobox {
+    width: 100%;
+    position: fixed;
+}
+
+.container2 {
+    height: 575px;
+    text-align: center;
+}
+
+.images1 {
+    padding: 3rem;
+    height: auto;
+    max-width: 340px;
+}
+
+header h1 {
+    font-size: 6rem;
+    color: white;
+}
+
+header h2 {
+    font-size: 2.4rem;
+    color: white;
+
+
+
+}
+
+.star-light,
+.stardark {
+    border: none;
+    border-top: 0.4rem #fff solid;
+    max-width: 25rem;
+    border-radius: 10px;
+    margin: 2.5rem auto;
+    overflow: visible;
+
+}
+
+.star-light::after,
+.stardark::after {
+    content: "\2605";
+    font-weight: 900;
+    font-size: 3.2rem;
+    top: -28px;
+    position: relative;
+    padding: 0 8px;
+}
+
+/*            Portfolio    */
+
+#portfolio {
+    height: 1100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: px;
+    text-align: center;
+}
+
+.btn {
+    margin: 2.2rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.4rem;
+    color: white;
+    cursor: pointer;
+    transform: all .5s;
+    margin: auto;
+
+}
+
+.btn:hover {
+    color: black;
+    background-color: #fff;
+
+}
+
+.btn-primary {
+    margin: 2.0rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    display: inline-block;
+    background-color: #1abc98;
+    border: 2px solid #067a61;
+    border-radius: 0.4rem;
+    color: white;
+    cursor: pointer;
+    transform: all .5s;
+}
+
+.btn-primary:hover {
+    color: black;
+    background-color: #fff;
+
+}
+
+#portfolio h2 {
+    font-size: 4.2rem;
+    color: rgb(58, 69, 87);
+}
+
+.stardark {
+    border-color: black;
+    background-color: #fff;
+    color: black;
+
+
+
+}
+
+.star-light::after {
+    color: #fff;
+    background-color: #1abc98;
+
+}
+
+.stardark::after {
+    color: black;
+    background-color: #white;
+
+
+
+}
+
+.col {
+    float: left;
+    padding: 40px;
+    padding-bottom: 10px;
+    width: 33.33%;
+
+}
+
+.portfolio-item {
+    position: relative;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 0.8;
+    border-radius: 13px;
+}
+
+.portfolio-item img {
+    display: block;
+    border-radius: 13px;
+}
+
+.img-p {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1abc98;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+
+}
+
+.overlay .icon {
+    color: #fff;
+    font-size: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about {
+    background-color: #1abc98;
+    color: #fff;
+
+}
+
+.about h2 {
+    font-size: 3rem;
+}
+
+#about-text {
+    text-align: left;
+}
+
+#about-text .left {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 240px;
+}
+
+#about-text .right {
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 240px;
+}
+
+.text1 {
+    font-size: 2rem;
+}
+
+#contact h2 {
+    font-size: 4.8rem;
+    color: rgb(58, 69, 87);
+}
+
+#contact-form {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+
+
+}
+
+.formgrup {
+    border-bottom: 1px solid #8f9391;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+
+.formgrup input,
+.formgrup textarea {
+    border: none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+}
+.formgrup input:focus{
+    outline: 0;
+}
+#contact-form textarea:focus{
+    outline: 0;
+}
+
+footer{
+    padding-top: 1rem;
+    padding-bottom: 15rem;
+    background-color: rgb(58, 69, 87);
+    color:#fff;
+    text-align: center;
+
+}
+footer h4{
+    font-size: 2.4rem;
+
+}
+footer p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
