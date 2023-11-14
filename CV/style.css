@@ -88,7 +88,7 @@ header {
 
 }
 
-.logobox {
+.logo-box {
     width: 100%;
     position: fixed;
 }
@@ -166,6 +166,12 @@ section {
     transform: all .5s;
     margin: auto;
 
+}
+.btn-social{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
 }
 
 .btn:hover {
@@ -352,4 +358,9 @@ footer h4{
 footer p {
     font-size: 1.5rem;
     margin-top: 1rem;
+}
+footer li{
+    display: inline-block;
+    margin-right: 1rem;
+    text-align: center;
 }
