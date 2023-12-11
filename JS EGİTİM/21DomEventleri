@@ -1,0 +1,14 @@
+
+//Butono tıklandıgığında consol log yazısı
+const btn = document.querySelector("#btnDeleteAll")
+//btn.addEventListener("click",function(){
+//    console.log("Butono tıklandı")
+//});
+
+//Butono tıklandıgığında ayrı bir fonksiyonla uyarı yazısı
+
+btn.addEventListener("click", btnClick);
+
+function btnClick() {
+    console.log("Butono tıklandı.");
+}
