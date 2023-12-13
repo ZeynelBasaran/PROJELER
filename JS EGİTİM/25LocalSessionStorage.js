@@ -34,7 +34,8 @@ console.log(value)
 console.log(typeof value)
 //localStorage.clear();                 //Clear ile verilr silinir
 console.log(localStorage.getItem("ahmet")) // İfadenin local storage içerisinde olup olmadıgını console log ile kontrol etmek
-if(localStorage.getItem("bilgisayar")){
+
+if(localStorage.getItem("bilgisayar")){//İfadeyi İf Blogu ile kontrol etmek
     console.log("Local Storage'da yer almaktadır.")
 }else{
     console.log("Local Storage'da yer almamaktadır.")
