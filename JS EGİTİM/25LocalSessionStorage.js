@@ -32,7 +32,8 @@ localStorage.setItem("bilgisayar",7000)// Rakamlarda String olarak saklı durmak
 const value =localStorage.getItem("bilgisayar")   // getItem ile değer çagırılır
 console.log(value)
 console.log(typeof value)
-//localStorage.clear();                 //Clear ile verilr silinir
+//localStorage.clear();                 //Clear ile veriler silinir
+//localStorage.remove("7000")           //Diger silme metodu
 console.log(localStorage.getItem("ahmet")) // İfadenin local storage içerisinde olup olmadıgını console log ile kontrol etmek
 
 if(localStorage.getItem("bilgisayar")){//İfadeyi İf Blogu ile kontrol etmek
@@ -41,5 +42,10 @@ if(localStorage.getItem("bilgisayar")){//İfadeyi İf Blogu ile kontrol etmek
     console.log("Local Storage'da yer almamaktadır.")
 }
 
+let user = "kodluyoruz" 
+localStorage.setItem('userInfo', user)
+let userStatus = {userName: 'kodluyoruz', isActive: true}
+localStorage.setItem('user', JSON.stringify(userStatus))
+//JSON.parse() Farklı veri türlerini String ifadeyi çevirmek için kullanılır
 
 
