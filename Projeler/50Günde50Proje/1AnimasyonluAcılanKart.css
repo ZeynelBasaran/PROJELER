@@ -1,13 +1,27 @@
 * {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font-family: 'Vina Sans', sans-serif;
     box-sizing: border-box;
+    font-size: 14px;
 }
-.container{
-  
+
+/* Sayfa tek sayfa halinde scroll bar yok */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+.container {
+    /* Divleri ortaladı  */
     display: flex;
-    text-align: center;
+    /* Kutuları yan yana getirdi.  */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.panel {
+    box-sizing: border-box;
 
 }
