@@ -1,0 +1,21 @@
+body *{
+    background-color: red;
+    color:white;
+}
+/* 
+Block Eleman Yanına Eleman almayan satırın hepsini kapsayan
+İnline Eleman İçerdigi ifade kadar yer kaplar Yanına eleman alır Yükseklik Genişlik almaz Yanlızca padding alır.
+İnline- Block Eleman İnline eleman gibi davranıp yükseklik ve genişlik alan.
+*/
+.inlineblock{
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    padding: 10px;
+}
+.inline{ /* Burdan yazılan kodun bir anlamı yok*/
+
+    width: 100px;
+    height: 150px;
+    padding: 10px;
+}

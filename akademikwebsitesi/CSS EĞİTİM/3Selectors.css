@@ -1,0 +1,17 @@
+/*
+CSS Yukarıdan aşagıya okur !
+
+* Universal (Sayfadaki herşey)
++ (Next-sibling combinator)
+> (Child combinator)
+|| (Column combinator) Experimental
+~ (Subsequent sibling combinator)
+" " (Descendant combinator)
+| (Namespace separator)
+[] Attribüte seçiçi 
+*/
+[class]{
+    color:red
+}
+
+
