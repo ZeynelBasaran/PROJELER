@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="FormEleman.css">
 </head>
+
 <body>
-    
+
+
+    <form action="" method="post"> <!--Bilgiler -->
+        <div class="form-row">
+            <label for="Adı">Adı Soyadı</label>
+            <input mame="Adı" type="text" id="Adı" value="Bu değer sayfa açıldıgında default gelecek" required>
+            <!--Doldurulması zorunlu istedigim alanlara required etiketi atılır-->
+            <!--bilgiler post edilirken name bilgisi doldurulmalıdır.-->
+        </div>
+
+        <div class="form-row">
+            <label for="tel">Telefon</label>
+            <input name="tel" type="tel" id="tel" required placeholder="212 000 00 00 ">
+        </div>
+
+        <div class="form-row">
+            <!--Kullanıcının müdahale edemedigi ve sayfada default gelen değer-->
+            <label for="tele">Bizi Ara</label>
+            <input name="tele" type="text" id="tel" disabled value="Buradaki Alana kullanıcı müdahale edemez">
+        </div>
+
+        <div class="form-row">
+            <label for="mail">Mail</label>
+            <input name="mail" type="email" id="mail" required>
+        </div>
+
+        <div class="form-row">
+            <label for="metin">Metin</label>
+            <textarea name="metin" id="metin" rows="10"></textarea>
+        </div>
+
+        <div class="form-row">
+            <label for="sehir">Yaşadığı Şehir</label>
+            <select name="sehir" id="">
+                <option value="34">İstanbul</option>
+                <option value="35">İzmir</option>
+                <option value="36">Ekişehir</option>
+                <option value="06">Ankara</option>
+                <option value="07">Antalya</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <p>Sevdiğiniz renk</p>
+            <label><input id=Kırmızı type="radio" name="renk" value="Kırmızı"> Kırmızı</label>
+            <label><input id=Mavi type="radio" name="renk" value="Mavi" checked> Mavi</label>
+            <!-- Buradaki name etiketi tek bir radio butonunun tıklanması istediginde aynı girilmelidir.-->
+            <!--Checked etiketi varsayılan olarak tikli gelmesi için atılır-->
+            <!--Radio butonununda name yerine value doldurulur-->
+        </div>
+
+        <div class="form-row">
+            <button type="submit">Gönder</button>
+            <button type="reset">Sıfırla</button>
+        </div>
+
+        <!--Görünmesini istemedigimiz ama her kullanıcıdan ön tanımlı gelmesini istedigimiz veriler için-->
+        <input type="hidden" name="product" id=""
+            value="Bu deger sayafada görülmeyecek ama post edilirken tanımlı olarak gelecek">
+
+
+
+
+
+    </form>
 </body>
+
 </html>
