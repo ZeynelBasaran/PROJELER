@@ -1,0 +1,98 @@
+body{
+    height: 4000px;
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: relative;  /*Bir etikete değer vermek için önce position değeri verilmesi gerekiyor*/
+    left:-15px; /*Bu değeri browser ın algılması için önce position değeri verilmeli*/
+    top: -10px;
+    text-align: center;
+
+}
+.kutu{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute; /*Relative verilen Bir üst kapsayıcının 0 noktasına yerleşir*/ 
+    top:20px;
+    left: 20px;
+
+
+}
+.kapsayici1{
+   position: relative; 
+   background-color: yellow;
+   height: 100px;
+   padding: 20px;
+}
+.kapsayici2{
+    position: relative; /*KApsayıcı 2 den relative özelligi kaldırılırsa kutu Body nin 0 noktasına gidecek */
+    background-color: gray;
+    height: 100px;
+    
+ }
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    position: fixed;
+    bottom:0;
+    color:wheat;
+}
+
+.fixedkutu{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: aqua;
+}
+
+.a{
+    position: relative;
+    height:350px;
+    width: 250px;
+
+  
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    left:20px;
+    top :120px;
+}
+.box-1{
+    background-color: blue;
+    position: static; /*.box ile verilen left ve top değerini geçersiz kıldık genişlik uzunluk aldık*/
+    color:white;
+}
+.index{
+    z-index: 1;
+}
+
+/*
+RELATİVE
+Ögeye verilen top bottom right ve left komutlarının işleve geçmesi için önce verilmelidir. Biz kutuyu istedigimiz gibi konumlandırabiliriz. Gerçekte kutu hala aynı yerde verilen değerlere göre konumlanmaktadır.
+
+ABSOLUTE
+Bu değer verilen kutu bir üst kapsayıcısına gider bakar oonda relative özeligi var mı yoksa bir üst yoksa bir üste bulana kadar gider buldugunda ise ilgili kapsayıcının 0 noktasından başlar
+
+POSİTİON FİXED
+Ekranın bir köşesinde sabit bir kutu bırakmak için kullanılır
+bottom ve top degeri ile yön verilebilir.
+
+STATİC
+Verilen tüm left-right-top ve bottom değerlerini geçersin kılar
+
+Z İNDEX
+Çalışması için relative - absolute - fixed değerlerlerinden biri verilmesi gerekmektedir.
+İki kutu üst üste geldimi hanginin üste duracagı seçilir
