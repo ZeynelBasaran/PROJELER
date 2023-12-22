@@ -6,6 +6,7 @@ li.setAttribute("title", "new item"); // Atribute ekleme
 li.setAttribute("data-id", "5"); // Atribute ekleme
 const text1 = document.createTextNode("New İtem") // Yazı metni oluşturma
 li.appendChild(text1);  // Text yazısını li ye attık
+li.textContent // metin yazısı atama inputtan da çekilebilir.
 
 const a = document.createElement("a");
 a.setAttribute("href", "#");// A elementine atribüte ekliyoruz.
