@@ -28,7 +28,7 @@ console.log(veri1);
 veri1 = document.getElementById("header").className; //Yanlızca Class çagrıldı alındı.
 console.log(veri1);
 
-veri2 = document.getElementById("header"); //Burda degikene atılarak kısaltıldı.
+veri2 = document.getElementById("header"); //Burda degişkene atılarak kısaltıldı.
 veri3 = veri2.className;
 console.log(veri3)
 

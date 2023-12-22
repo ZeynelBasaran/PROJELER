@@ -4,6 +4,8 @@
 //}
 //merhaba(); //Fonsiyon çagırma
 
+//function merhaba(Parametre kısmı){ burada kullanılabilir}
+
 //function deneme1(name , age){
 //   console.log(`İsim: ${name} Yaş: ${age} `)
 //}
@@ -20,7 +22,7 @@
 
 
 function yasHesapla(dogumYili) {
-    return 2023 - dogumYili;
+    return 2023 - dogumYili;  //RETURN Fonksiyon sonucu almak için şart fonksiyon döndüktekten sonra sonuç verir. Bir fonksiyonda bir adet return olur.
 }
 let ageLeyla = yasHesapla(2005)
 let ageMahsun = yasHesapla(1992)

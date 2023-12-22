@@ -1,6 +1,6 @@
 // Degişkenler.  (let,var)
 let pasword;
-pasword = "levemt";
+pasword = "levent";
 console.log(pasword)
 
 //Degişken tanımlama kuralları
