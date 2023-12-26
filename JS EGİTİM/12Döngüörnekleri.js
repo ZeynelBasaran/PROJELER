@@ -22,10 +22,21 @@ let user = [
 //    console.log(`index: ${i}  Şehir: ${city[i]}`)
 //};
 
-//Foreach Metodu Dizi içerindeki elemanaları tek tek kopyalama
-//city.forEach(function(item){
-//    console.log(item);
-//})
+/*
+//FOREACH-ARROW FUNC. Metodu JavaScript'te forEach , döngü oluşturmamızı ve bu döngüyü sırayla çalıştırmamızı sağlayan bir array metodudur.
+//arr.forEach(function(value, index, array) { // index ve array kullanmak opsiyoneldir}
+
+city.forEach(function(item){
+    console.log(item);
+})
+const animals = ["cat" , "dog" , "bird", "horse"];
+animals.forEach( animal => console.log( animal ) );
+Arrow function gosterimi(ES6). 
+
+city.forEach ( item => {.  // ARROW FONSİYON ÖRNEGİ
+    console.log(item)
+})
+*/
 
 //OBje içerisinde sadece isimleri çagırmak
 //for (let i=0; i<user.length ; i++){
@@ -42,7 +53,7 @@ let user = [
 //    return item.firtName + " "+item.lastName
 //})
 //console.log(value)
-
+/*
 let numbers = [1,3,5,9,11]
 let num = numbers.map(function(n){
     return n*n
