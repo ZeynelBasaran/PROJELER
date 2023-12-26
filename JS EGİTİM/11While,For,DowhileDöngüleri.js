@@ -39,21 +39,25 @@
 //    i++;
 //    }while(i<10);
 
-//For Döngüsü
-//for(let i=0 ; i<10 ; i++){
-//    console.log(i)
-//}
+/******   FOR GÖNGÜSÜ
+Bir for döngüsü, belirtilen koşul doğru olduğu sürece komutların çalıştırılmasını sağlar. Koşul sağlanmazsa döngü çalışmayı durdurur.
+for (başlangıç ataması ; koşul ifadesi ; artırım ifadesi){Yapılacak İşlem}
 
-//for (let i = 0; i < 10; i++) {
-//    if (i == 3) {
-//        console.log("Seçilen Rakam " + i);
-//       break;
-//    }
-//    console.log(i)
-//}
-//for (let i=1; i<10; i++ ){  //Birden0'a kadartoplam
-//    let toplam=0 ;
-//    toplam+=i ;
-//}
-//console.log(toplam)
+for(let i=0 ; i<10 ; i++){
+    console.log(i)
+}
 
+for (let i = 0; i < 10; i++) {
+    if (i == 3) {
+        console.log("Seçilen Rakam " + i);
+       break;
+    }
+    console.log(i)
+}
+for (let i=1; i<10; i++ ){  Birden0'a kadartoplam
+    let toplam=0 ;
+    toplam+=i ;
+}
+console.log(toplam)
+
+*/
