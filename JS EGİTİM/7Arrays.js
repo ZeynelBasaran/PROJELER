@@ -41,7 +41,7 @@ console.log(birthday); //Bunu ayrı bir degişkene içine alabiliriz. let lastİ
 birthday.shift(); // Başdaki öğeyi listeden çıkarmak içim (SHİFT)
 console.log(birthday);
 
-let index = birthday.indexOf(1992);  // Dizideki elemanın kaçıncı index oldugunu görmek için (İNFEXOF)
+let index = birthday.indexOf(1992);  // Dizideki elemanın kaçıncı index oldugunu görmek için (İNDEXOF)
 console.log("index:" + index);
 
 isim.reverse();    // Diziyi terse çevirmek index tam terse döner (REVERSE)
