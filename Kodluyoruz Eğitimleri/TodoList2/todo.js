@@ -1,16 +1,20 @@
 const btnekle = document.querySelector("#liveToastBtn");
 const inputtext = document.querySelector("#task")
 const ul = document.querySelector("#list")
-const kapat = document.querySelectorAll(".material-symbols-outlined")
-const li2 = document.querySelectorAll("li")
+const li2 = document.getElementsByTagName("li")
+const teklisil = document.querySelectorAll("#list li span .material-symbols-outlined")
+
+console.log(teklisil)
 
 
 
 
 btnekle.addEventListener("click", addList);
+teklisil.addEventListener("click", run);
 
-kapat.addEventListener("click", removeİtem);
-
+function run(event) {
+    console.log(`Event Type ${event.type}`)
+}
 
 
 function addList(a) {
@@ -20,23 +24,9 @@ function addList(a) {
         let li = document.createElement("li")
         li.innerHTML = inputtext.value;
         ul.appendChild(li);
-        let span=document.createElement("span")
-        span.classList = "material-symbols-outlined"
-        span.innerHTML = "close"
-        li.appendChild(span)
+        let span = document.createElement("span");
+        span.classList = "material-symbols-outlined";
+        span.innerHTML = "close";
+        li.appendChild(span);
 
-    }
-}
-function removeİtem(a){
-    if(confirm("Silmek istediginze emin misiniz.")){
-        a.target;
-        a.target.parentElement.remove()
-    } // İlk itemi siliyor yanlızca 
-}
-
-/*
-li2.forEach(li2 =>{
-    li2.addEventListener("click",()=>{
-        li2.classList.add("active");
-    })
-}*/
+    }};

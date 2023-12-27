@@ -87,3 +87,31 @@ let list1=[1,2,3]
 let list2=[4,5,6]
 let alllist = [... list1 , ...list2]
 console.log(alllist)
+
+//(FİLTER) dizi elemanlarını döngüye alıp, istediğimiz koşula sahip olanlarla yeni bir dizi oluşturmak için kullanılır.
+const list5 = ["mic","csble","speaker","Desktop Pc","sErvEr","MouSe",]
+const harf5denaz = list5.filter(item => item.length <6)
+console.log(harf5denaz)
+
+const usere= [
+    {fullName:"Ayşe Sümer ", isActive:false},
+    {fullName:"Metin Balkan ", isActive:true},
+    {fullName:"Leyla Zana ", isActive:false},
+    {fullName:"obi Van ", isActive:true}
+]
+const active= usere.filter(user=>user.isActive) //Sadece aktif elemanları getirdi.
+console.log(active)
+
+//(MAP) 
+const NEW_USER = list5.map(user => user.toLowerCase()) ;
+console.log(NEW_USER)
+
+
+const USERS_OBJ=list5.map(item =>{ 
+    return { 
+        username: item, 
+        shortname: `${item[0]}`, 
+        NewName: `${item[0].toUpperCase()}${item.slice(1).toLowerCase()}`
+    };
+});
+console.log(USERS_OBJ);
