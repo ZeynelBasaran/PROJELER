@@ -2,20 +2,12 @@ const btnekle = document.querySelector("#liveToastBtn");
 const inputtext = document.querySelector("#task")
 const ul = document.querySelector("#list")
 const li2 = document.getElementsByTagName("li")
-const teklisil = document.querySelectorAll("#list li span .material-symbols-outlined")
-
-console.log(teklisil)
-
-
+const teklisil = document.querySelectorAll(".material-symbols-outlined")
 
 
 btnekle.addEventListener("click", addList);
-teklisil.addEventListener("click", run);
 
-function run(event) {
-    console.log(`Event Type ${event.type}`)
-}
-
+[...teklisil].forEach(item=>{console.log(item)})
 
 function addList(a) {
     if (inputtext.value === "") {
@@ -30,3 +22,4 @@ function addList(a) {
         li.appendChild(span);
 
     }};
+

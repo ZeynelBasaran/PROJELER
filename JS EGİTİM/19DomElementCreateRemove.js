@@ -6,12 +6,12 @@ li.setAttribute("title", "new item"); // Atribute ekleme
 li.setAttribute("data-id", "5"); // Atribute ekleme
 const text1 = document.createTextNode("New İtem") // Yazı metni oluşturma
 li.appendChild(text1);  // Text yazısını li ye attık
-li.textContent // metin yazısı atama inputtan da çekilebilir.
+li.textContent =""// li'ye direkt text metni ekleme bu direkt metin ekler HTML ETİKETİ çalışmaz
 
 const a = document.createElement("a");
 a.setAttribute("href", "#");// A elementine atribüte ekliyoruz.
 a.className = "delete-item float-right";// A elemntine class ekleme
-a.innerHTML = `<i class="fas fa-times"></i>`; //A elementinin içine metin ekledik
+a.innerHTML = `<i class="fas fa-times"></i>`; //A elementinin içine metin ekledik bunda HTML ETİKETİ çalışır
 li.appendChild(a); //Li'ye eleman ekleme
 document.querySelector("#task-list").appendChild(li); // Li yi ekrana eklemek
 console.log(li);

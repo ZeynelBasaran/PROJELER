@@ -1,17 +1,18 @@
-// Degişkenler.  (let,var)
+/* Degişkenler.  (let ve const)
 let pasword;
 pasword = "levent";
 console.log(pasword)
 
-//Degişken tanımlama kuralları
+
+Degişken tanımlama kuralları
 yas1=30
 
-//Degişken isimlerinde komut isimleri kullanulamaz if,var vs..
+1)Degişken isimlerinde komut isimleri kullanulamaz if,var vs..
+2)Degişken isimlerinde Türkçe karakter kullanılmaz ve boşluk olmaz 
+3)CamelCase ile yazılır.  let adSoyad
+4)Sadece dolar, tire, harf ve rakam kullanılır
 
-//Degişken isimlerinde Türkçe karakter kullanılmaz ve boşluk olmaz CamelCase ile yazılır.
-let adSoyad
-
-//Sabitler (const)
+Sabitler (const)
 var email
 email = "12345@gmail.com"
 console.log(email)
@@ -20,7 +21,7 @@ console.log(email)
 
 const emaill = "12345@gmail.comm"
 console.log(emaill)
-//const = "14545441214161@gmail.com" // Hata vermektedir. Tekrar tanımlama yapılamaz 
+const = "14545441214161@gmail.com"  Hata vermektedir. Tekrar tanımlama yapılamaz 
 console.log(emaill)
 
-
+*/

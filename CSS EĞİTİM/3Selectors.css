@@ -5,14 +5,25 @@ CSS Yukarıdan aşagıya okur !
 + (Next-sibling combinator)
 > (Child combinator)
 || (Column combinator) Experimental
-~ (Subsequent sibling combinator)
+~ (Subsequent sibling combinator)Aynı parent etikete sahip olan ve birbiri ardına gelen etiketleri seçmek için kullanılır
 " " (Descendant combinator)
 | (Namespace separator)
 [] Attribüte seçiçi 
+
+
+.class	        //.intro	    // Sınıf Seçiciler 
+.class1.class2	//.name1.name2	// çalışması için 2 classından beraber yada parents olarak tanımlanması gerekli
+.class1 .class2 //.name1 .name2 //	 iki ayrı class
+#id	            //#firstname.   // Selects the element with id="firstname"
+*               //	*	        // Selects all elements
+element 	    // p.           //  // Selects all <p> elements
+element.class	//p.intro	    // Selects all <p> elements with class="intro"
+element,element	//div, p	    // Selects all <div> elements and all <p> elements
+element element	//div p	        // Selects all <p> elements inside <div> elements
+element>element	//div > p	    // Selects all <p> elements where the parent is a <div> element
+element+element	//div + p	    // Selects the first <p> element that is placed immediately after <div> elements
+element1~element2//	p ~ ul	    // Selects every <ul> element that is preceded by a <p> element
+:first-child	//p:first-child	// Selects every <p> element that is the first child of its parent
+:last-child	    //p:last-child	// Selects every <p> element that is the last child of its parent
+:nth-child(n)	//p:nth-child(2)//	Selects every <p> element that is the second child of its parent
 */
-[class]{
-    color:red
-}
-
-
-

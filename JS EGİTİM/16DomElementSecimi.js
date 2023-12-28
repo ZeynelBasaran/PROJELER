@@ -3,10 +3,8 @@ let veri;
 veri = window.document;
 console.log(veri)
 
-
 veri = window.document.body; // Sadece Boddy kısmı
 console.log(veri)
-
 
 veri = window.document.forms; // Form kısmına erişim
 console.log(veri)
@@ -17,10 +15,14 @@ console.log(veri)
 veri = window.document.scripts;// Script'lere ulaşım
 console.log(veri)
 
-//Document.getElementById Metodu
+//**************** document.getElementById Metodu **************
+//Array degildir. Foreach çalışmaz. HTML Collection'dur. Tüm elemanlarını seçmek için for metodu kullanılır.
 let veri1;
 veri1 = document.getElementById("header");
 console.log(veri1);
+
+//for (i ; i<length;i++){console.log(...[i])}. Hepsini seçip kullanmak için.
+// [...ilgilibaşlık].forEach(item=>{console.log(item)}) bu da farklı yöntem
 
 veri1 = document.getElementById("header").id; //Yanlızca İd alındı.
 console.log(veri1);
@@ -40,7 +42,8 @@ veri2.innerText ="Yapılacaklar";  // Başlıgı degiştirdik
 
 veri1 = document.getElementById("header").innerHTML = "<b>To do Listt</b>";// HTML ögesi olarak eklemek için inner HTML uzun versiyonda yazdım.
 
-//querySelector Metodu CSS seçiçi gibi seçilir.
+//*************** document.querySelector Metodu ***********
+//CSS seçiçi gibi seçilir.İlk eşleştigini döndürür. 
 console.log(document.querySelector(".card-header"));
 console.log(document.querySelector("#header"));
 console.log(document.querySelector("div"));

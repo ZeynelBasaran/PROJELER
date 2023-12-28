@@ -1,7 +1,7 @@
 // Yeni Element oluşturulup - oluşturulan olan elemeni var olan degiştirmek
 const cardHeader = document.querySelector(".card-header")
 const h2 = document.createElement("h2")
-h2.setAttribute("class", "card-header")
+h2.setAttribute("class", "card-header") // Set attribute içerideki classı direkt ezer ve siler add yöntemi sadece ekleme yapar 
 h2.appendChild(document.createTextNode("Yeni Logo"))
 const parent = document.querySelector(".card")
 parent.replaceChild(h2, cardHeader);
