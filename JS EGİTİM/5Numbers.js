@@ -5,6 +5,13 @@ veri = Number ("5")
 console.log(typeof veri)
 console.log(veri)
 
+/* 
+    parseInt(),Number(),Plus sign(+) artı işereti ekleme(String to İnt)
+    parseFloat(),Number(),(+)  (String to Float)
+    parseInt(). (Float to İnt)
+   
+*/
+
 veri = parseInt("5.5");   //Ondalık kısmını siliyor.
 console.log(veri)
 veri = parseFloat("5.5"); //Ondalık kısmıyla beraber göster
@@ -27,8 +34,8 @@ console.log(veri1)
 
 veri1 = Math.PI; //Pi sayısını kullanmak için
 veri1 = Math.round(); //Ondalıklı sayıyı yuvarlama yakın yere
-veri1 = Math.ceil();  //Ondalıklı sayıyı Yukarı yuvarlar 
-veri1 = Math.floor(); //Ondalıklı sayıyı Aşagı yuvarlar
+veri1 = Math.ceil();  //Ondalıklı sayıyı Yukarı yuvarlar Tavan
+veri1 = Math.floor(); //Ondalıklı sayıyı Aşagı yuvarlar Taban
 veri1 = Math.pow(3,3) //3ün karesini almak için
 veri1 = Math.sqrt(81)  //Karekök almak için
 veri1 = Math.abs(-50); //Mutlak değer alır

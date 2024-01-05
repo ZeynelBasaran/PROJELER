@@ -17,32 +17,34 @@ console.log(veri)
 veri="benim adım " + ad + " " +soyad +' ve ben istanbul\'da yaşıyorum' //  \Kaçış için kullanılır
 console.log(veri)
 
-veri = ad.concat(" "+soyad) // Concat metodu
+veri = ad.concat(" "+soyad) // (CONCAT) Concat metodu
 console.log(veri)
 
-veri = veri.toUpperCase();  // Hepsi büyük harf
+veri = veri.toUpperCase();  // (TOUPPERCASE) String veririni büyük harfe dönüştürür.
 console.log(veri)
 
 veri = veri.toLowerCase(); 
-console.log(veri);          // Hepsi küçük harf
+console.log(veri);          // (TOLOVERCASE) String veririni küçük harfe dönüştürür.
 
-//veri = veri.substring(0,3); // String içerisinde belirledigimiz aralıgı alır
+//veri = veri.substring(0,3); // (SUBSTRİNG) String içerisinde belirledigimiz aralıgı alır
 console.log(veri);
 
-//veri = veri.slice(2,5);     // String içerisinde belirledigimiz aralıgı alır
+//veri = veri.slice(2,5);     //(SLİCE) String içerisinde belirledigimiz aralıgı alır
 console.log(veri);
 
-//veri = veri.indexOf("e"); // String içerisinde seçilen karakteri arama
+//veri = veri.indexOf("e"); //(İNDEXOF) String içerisinde seçilen karakteri arama
 console.log(veri);
 
-veri = veri.replace("zeynel","ahmet"); // String içerisindeki veriyi degiştirmek
+veri = veri.replace("zeynel","ahmet"); //(REPLACE) String içerisindeki veriyi degiştirmek
 console.log(veri)
 
-veri = veri.length;                 // String ifadenin kaç harften oluştuğunu ifade eder
+veri = veri.length; //(LENGHT) String içerisindeki karakter sayısını belirtir boşluk dahil
 console.log(veri)
 
-veri = hobiesbosluk.split(" ");         // String ifadeyi dizi çevirme boşlukla
+veri = hobiesbosluk.split(" ");      //(SPLİT) String ifadeyi dizi çevirme boşlukla Array oluşturma
 console.log(veri)
 
-veri = hobiesvirgul.split(",");  // String ifadeyi dizi çevirme virgülle 
+veri = hobiesvirgul.split(",");  //(SPLİT) String ifadeyi dizi çevirme virgülle 
 console.log(veri)
+
+// (İNCLUDEX) String içerisinde varlık sorgulama mevcutsa true döner.

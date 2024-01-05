@@ -1,5 +1,5 @@
-//        Degişken Türleri
-//  Primitive Type 
+/*   Veri Türleri
+1)Primitive Type (Degiştirilemeyen veri türleri)
 //String
 let firstname = "Zeynel Başaran"
 console.log(typeof firstname)
@@ -12,8 +12,9 @@ console.log(typeof krediKullanımı)
 //Undefined
 let phone;
 console.log(typeof phone)
+//Null
 
-//  Referance Type Object
+2)Referance Type Object (Degiştirilebilen veri türleri)
 //Array
 let liste = ["Aslı", "Leyla" , "Fatma"] ;
 console.log(typeof liste)  
@@ -29,3 +30,4 @@ var hesapla = function() {
 }
 console.log(typeof hesapla)
 
+*/
