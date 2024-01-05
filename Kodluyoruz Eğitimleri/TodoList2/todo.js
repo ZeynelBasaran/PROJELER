@@ -7,7 +7,8 @@ const teklisil = document.querySelectorAll(".material-symbols-outlined")
 
 btnekle.addEventListener("click", addList);
 
-[...teklisil].forEach(item=>{console.log(item)})
+
+[...teklisil].forEach(item => { console.log(item) })
 
 function addList(a) {
     if (inputtext.value === "") {
@@ -21,5 +22,21 @@ function addList(a) {
         span.innerHTML = "close";
         li.appendChild(span);
 
-    }};
+    }
+};
 
+teklisil.forEach(item => {
+    item.addEventListener('click', (event) => {
+        if (confirm("Silmek istediğinize emin misiniz?")) {
+            event.target.parentElement.remove();
+        }
+    });
+});
+
+
+{
+    classList = "text-decoration-line-through "
+    <span class="material-symbols-outlined">
+done
+</span>
+}
