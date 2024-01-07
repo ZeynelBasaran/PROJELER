@@ -41,11 +41,13 @@ console.log(birthday); //Bunu ayrı bir degişkene içine alabiliriz. let lastİ
 birthday.shift(); // Başdaki öğeyi listeden çıkarmak içim (SHİFT)
 console.log(birthday);
 
-let index = birthday.indexOf(1992);  // Dizideki elemanın kaçıncı index oldugunu görmek için (İNDEXOF)
+let index = birthday.indexOf(1992);  // Dizideki elemanın kaçıncı index oldugunu görmek için (İNDEXOF) yoksa-1 döndürür (lastindexof) 2 adet varsa sonuncunun indexini söyletr   
 console.log("index:" + index);
 
 isim.reverse();    // Diziyi terse çevirmek index tam terse döner (REVERSE)
 console.log(isim)
+
+
 
 sıralama.sort();   //Dizi deki yılları ve stringleri alfebeye göre sıralama (SORT)
 console.log(sıralama)
@@ -115,3 +117,8 @@ const USERS_OBJ=list5.map(item =>{
     };
 });
 console.log(USERS_OBJ);
+
+//(SPLİT) Kullanarak diziyi parçalayarak veya bölerek dizi oluşturmak
+let js = "Javascript"
+let parca = js.split("")
+console.log(parca)
