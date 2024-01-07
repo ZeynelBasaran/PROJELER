@@ -4,7 +4,7 @@ const ul = document.querySelector("#list")
 const li2 = document.getElementsByTagName("li")
 const teklisil = document.querySelectorAll(".material-symbols-outlined")
 
-
+console.log(teklisil)
 btnekle.addEventListener("click", addList);
 
 
@@ -33,10 +33,16 @@ teklisil.forEach(item => {
     });
 });
 
+teklisil.forEach(panel=>{
+    panel.addEventListener("click",(event) =>
+    panel.classList.add("checked"))
+    console.log(panel)
+} )
 
+/*
 {
     classList = "text-decoration-line-through "
     <span class="material-symbols-outlined">
 done
 </span>
-}
+}. */

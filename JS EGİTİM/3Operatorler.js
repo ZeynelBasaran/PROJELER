@@ -34,9 +34,9 @@ veri %=a // veri = veri/a
 console.log(veri)
 
 //3. Karşılaştırma Operatörler
-veri = a==b  //Birbirine eşit mi ?
+veri = a==b  //Birbirine eşit mi ? (iki eşittir sadece değer kontrolü)
 console.log(veri) // Bu nedenle false
-veri = 5==="5" ;// Hem türe bakıyor hem değere
+veri = 5==="5" ;// Hem türe bakıyor hem değere (Üç eşittir değer + tür kontrolü)
 console.log(veri) // Biri rakam digeri yazı ifadesi 
 veri = a!=b // !Eşit degildir ifadesi bu nedenle true (Evet eşit degil)
 console.log(veri) // Sonuç true

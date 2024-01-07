@@ -1,16 +1,16 @@
 let islem = 1;
 
 switch (islem) {
-    case 1:
+    case 1: 
         console.log("işlem 1'e eşittir")
-        break;
+        break; // Break konmazsa diğer koşullarda çalışır.
     case 2:
         console.log("işlem 2'ye eşittir")
         break;
     case 3:
         console.log("işlem 3'ye eşittir")
         break;
-    default:
+    default: // Hiç bir koşul sağlanmazsa çalışacak
         console.log("Rakam yok");
 
 }
