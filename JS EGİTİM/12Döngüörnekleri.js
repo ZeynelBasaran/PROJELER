@@ -33,7 +33,7 @@ const animals = ["cat" , "dog" , "bird", "horse"];
 animals.forEach( animal => console.log( animal ) );
 Arrow function gosterimi(ES6). 
 
-city.forEach ( item => {.  // ARROW FONSİYON ÖRNEGİ
+city.forEach ( item => {  // ARROW FONSİYON ÖRNEGİ
     console.log(item)
 })
 
