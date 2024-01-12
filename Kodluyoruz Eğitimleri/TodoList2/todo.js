@@ -33,16 +33,18 @@ teklisil.forEach(item => {
     });
 });
 
-teklisil.forEach(panel=>{
-    panel.addEventListener("click",(event) =>
-    panel.classList.add("checked"))
-    console.log(panel)
-} )
+const panels= document.querySelectorAll(".text-decoration-line-through");
 
-/*
-{
-    classList = "text-decoration-line-through "
-    <span class="material-symbols-outlined">
-done
-</span>
-}. */
+panels.forEach(panel=>{ 
+
+    panel.addEventListener("click",()=>{
+        panel.classList.add("checked");// Tıklanan panele active özelligi ekliyor.
+    })
+    removeActive()
+})
+function removeActive(){ // ClassList i siliyor 
+    panels.forEach(panel =>{
+        panels.classList.remove("checked")
+    })
+} 
+
