@@ -18,7 +18,7 @@ if (sipariş1 == "kekik") {
         İşlem Tutarı = ${(kfiyat*adet)*0.9}
         KDV %10 ${(((kfiyat*adet)*0.9)*0.1)}
         Genel Toplam ${((kfiyat*adet)*0.9)*1.10}`)}
-   }else if(sipariş1 == "nane"){ ) }
+   }else if(sipariş1 == "nane"){ }
 
 
 

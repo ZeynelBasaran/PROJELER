@@ -1,15 +1,17 @@
-let operator1 = document.querySelector("#operatör1")
-operator1 = "+fgfg"
+let operator1 = document.querySelector("#operatör1");
+let operator2 = document.querySelector("#operatör2");
+let operator3 = document.querySelector("#operatör3");
+let operator4 = document.querySelector("#operatör4");
+let operator5 = document.querySelector("#operatör5");
 
-let operator2 = document.querySelector("#operatör2")
-operator2 ="7"
+function run(event){
+    console.log(`tıklandı `)
+}
 
-let operator3 = document.querySelector("#operatör3")
-operator1 = "4"
+operator1.addEventListener("click",run())
+operator2.addEventListener("click",run())
+operator3.addEventListener("click",run())
+console.log(operator1)
+console.log(operator2)
+console.log(operator3)
 
-let operator4 = document.querySelector("#operatör4")
-operator2 ="1"
-
-
-let sonuc = `${operator2} ${operator1} ${operator3}`
-console.log(sonuc)
