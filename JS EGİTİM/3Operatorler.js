@@ -16,7 +16,7 @@ console.log(veri)
 let d= 10
 veri =d++; // +1 Artırmak
 console.log(d)
-veri=a%b   // Mod alma
+veri=a%b   // Mod alma (Blümden direkt kalanı söylüyor)
 console.log(veri)
 
 //2. Atama Operatörler
