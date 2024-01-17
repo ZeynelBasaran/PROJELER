@@ -61,6 +61,63 @@ if (asal) {
 } else {
   console.log(`${sayi} Asal Değildir.`);
 }
-*/
+
+//Dik üçgen oluşturma
+let sayi = Number(prompt("Bir Rakam Giriniz."));
+dik = []
+for (i=0 ; i<=sayi; i++){
+    (dik[i]= "*");
+    console.log(dik)
+}
+
+//Girilen sayı tam kare midir kontrolü
+var sayi =Number(prompt("Bir Rakam Giriniz."));
+var tamKareMi = false;
+for (var i = 1; i <= sayi; i++) {
+  if (i * i === sayi) {
+    tamKareMi = true;
+    break; // Sayıyı bulduktan sonra döngüyü sonlandırın
+  }
+}
+if (tamKareMi) {
+  console.log("Sayı tam karedir.");
+} else {
+  console.log("Sayı tam kare değildir.");
+}
+
+//Girilen iki sayıdan büyük olanın obeb i yazıdran program
+let sayi = Number(prompt("Bir Rakam Giriniz."));
+let sayi2 = Number(prompt("Bir Rakam Giriniz."));
+if(sayi>sayi2){
+  for (i=sayi; i>1; i--) {
+    if (sayi%i ==0 ) {
+     console.log(i)
+      // Sayıyı bulduktan sonra döngüyü sonlandırın
+    }else("Tam böleni yoktur")
+  }}else if(sayi<sayi2){
+    for (i=sayi2; i>1; i--) {
+      if (sayi2%i ==0 ) {
+       console.log(i)
+        // Sayıyı bulduktan sonra döngüyü sonlandırın
+      }else("Tam böleni yoktur")
+    }} */
+
+//Girilen sayı ile bilgisayardan girilen sayıyı eşleştiren program
+let sayi = Math.floor(Math.random() * 100 + 1);
+console.log(sayi)
+function dene() {
+  const tahmin = Number(prompt("Bir Rakam Giriniz."));
+  if (sayi > tahmin) {
+    console.log("Tahmininizi yükseltin");
+    dene();
+  } else if (sayi < tahmin) {
+    console.log("Tahmininizi düşürün");
+    dene();
+  } else {
+    console.log("Tebrikler Doğru tahmin")
+  }
+};
+dene();
+
 
 
