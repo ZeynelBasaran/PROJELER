@@ -14,14 +14,14 @@ function addList(a) {
     if (inputtext.value === "") {
         alert("Lütfen veri giriniz")
     } else {
-        let li = document.createElement("li")
+        let li = document.createElement("li");
+        li.classList = "text-decoration-line-through";
         li.innerHTML = inputtext.value;
         ul.appendChild(li);
         let span = document.createElement("span");
         span.classList = "material-symbols-outlined";
         span.innerHTML = "close";
         li.appendChild(span);
-
     }
 };
 
@@ -35,8 +35,7 @@ teklisil.forEach(item => {
 
 const panels= document.querySelectorAll(".text-decoration-line-through");
 
-panels.forEach(panel=>{ 
-
+panels.forEach(panel=>{
     panel.addEventListener("click",()=>{
         panel.classList.add("checked");// Tıklanan panele active özelligi ekliyor.
     })
