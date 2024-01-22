@@ -17,34 +17,44 @@ console.log(veri)
 veri="benim adım " + ad + " " +soyad +' ve ben istanbul\'da yaşıyorum' //  \Kaçış için kullanılır
 console.log(veri)
 
-veri = ad.concat(" "+soyad) // (CONCAT) Concat metodu
+// (CONCAT) Concat metodu stringleri birleştirme
+veri = ad.concat(" "+soyad) 
 console.log(veri)
 
-veri = veri.toUpperCase();  // (TOUPPERCASE) String veririni büyük harfe dönüştürür.
+// (TOUPPERCASE) String veririni büyük harfe dönüştürür.
+veri = veri.toUpperCase();  
 console.log(veri)
 
+// (TOLOVERCASE) String veririni küçük harfe dönüştürür.
 veri = veri.toLowerCase(); 
-console.log(veri);          // (TOLOVERCASE) String veririni küçük harfe dönüştürür.
+console.log(veri);          
 
-//veri = veri.substring(0,3); // (SUBSTRİNG) String içerisinde belirledigimiz aralıgı alır
+// (SUBSTRİNG) 
+//veri = veri.substring(0,3); String içerisinde belirledigimiz aralıgı alır.Slice ile aynı özelliktedir.
 console.log(veri);
 
-//veri = veri.slice(2,5);     //(SLİCE) String içerisinde belirledigimiz aralıgı alır
+// (SLİCE)
+//veri = veri.slice(2,5);      String içerisinde belirledigimiz aralıgı alır.Tek bir değer verilirse ordan itibaren başlar
 console.log(veri);
 
-//veri = veri.indexOf("e"); //(İNDEXOF) String içerisinde seçilen karakteri arama
+// (İNDEXOF)
+//veri = veri.indexOf("e");  String içerisinde seçilen karakteri arama
 console.log(veri);
 
-veri = veri.replace("zeynel","ahmet"); //(REPLACE) String içerisindeki veriyi degiştirmek
+// (REPLACE)
+veri = veri.replace("zeynel","ahmet"); // String içerisindeki veriyi tespit edip degiştirmek için
 console.log(veri)
 
-veri = veri.length; //(LENGHT) String içerisindeki karakter sayısını belirtir boşluk dahil
+// (LENGHT)
+veri = veri.length; // String içerisindeki karakter sayısını belirtir boşluk dahil
 console.log(veri)
 
-veri = hobiesbosluk.split(" ");      //(SPLİT) String ifadeyi dizi çevirme boşlukla Array oluşturma
+// (SPLİT)
+veri = hobiesbosluk.split(" ");     // String ifadeyi dizi çevirme boşlukla Array oluşturma
 console.log(veri)
 
-veri = hobiesvirgul.split(",");  //(SPLİT) String ifadeyi dizi çevirme virgülle 
+veri = hobiesvirgul.split(",");  // String ifadeyi diziye çevirme virgülle 
 console.log(veri)
 
 // (İNCLUDEX) String içerisinde varlık sorgulama mevcutsa true döner.
+// (TRİM) String içerisindeki boşlukları silmek için

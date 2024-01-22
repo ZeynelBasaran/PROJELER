@@ -65,5 +65,11 @@ function yenidendene() {
 };
 yenidendene()
 
+try {    yazdır("merhaba")
+ //Sistemi çökertme hata verme ihtimali olan kodları yazıp kontrol etmek için try içerisine atabiliriz.
+     } catch(hata){
+ console.error()
+}
+
 
 
