@@ -58,5 +58,41 @@ if (month === "ocak" || month === "mart" || month === "mayıs" || month === "ağ
     console.log(` Girdiginiz ay : ${month}'dır bu ay 31 Gün çekmektedir.  `)
 } else if (month === "nisan" || month === "haziran" || month === "temmuz" || month === "eylül" || month === "kasım") { console.log(` Girdiginiz ay : ${month}'dır bu ay 30 Gün çekmektedir.  `) }
 else if (month === "şubat") { console.log(console.log(` Girdiginiz ay : ${month}'dır bu ay 28 Gün çekmektedir.  `)) }else{console.log("hatalı giriş")}
+
+list = ["#",]
+for(i=0; i<10 ; i++){
+    list[i]= "#"
+    console.log(list)
+}
+for (let i = 1; i <= 7; i++) {
+    console.log("#".repeat(i));
+}
+
+for (let i = 0; i <= 10; i++) {
+console.log(` ${i} * ${i} = ${i*i}   `  )
+}
+
+for (sayi=4 ;sayi<=100 ;sayi++){
+let asal = true;
+for (let i = 2; i <= sayi - 1; i++) {
+  if (sayi % i === 0) {
+    asal = false;
+    break;
+  }
+}
+if (asal) {
+  console.log(`${sayi} Asaldır.`);
+} else {
+  console.log(`${sayi} Asal Değildir.`);
+}
+
+}
 */
 
+let toplam=0
+for (i=0; i<=100 ;i++){
+    if(i%2==1){toplam = i+toplam}
+    
+    
+}
+console.log(toplam)

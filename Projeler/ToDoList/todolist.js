@@ -3,71 +3,48 @@ const addTask = document.querySelector("#btnAddNewTask")
 const text = document.querySelector("#txtTaskName")
 const deleteAll = document.querySelector("#btnDeleteAll")
 const taskList = document.querySelector("#task-list");
-const itemss= ["To Do 1","To Do 2","To Do 3","To Do 4"]
+const itemss = ["To Do 1", "To Do 2", "To Do 3", "To Do 4"]
+const forms = document.querySelector("form")
+const close = document.querySelectorAll(".fa-times")
 
 
-addTask.addEventListener("click", newİtems);
-taskList.addEventListener("click", deleteİtem);
-deleteAll.addEventListener("click", allremove);
 
-function newİtems(a) {
-    if (text.value === "  ") {
-        alert("Lütfen veri giriniz")
-    }else{//Boş girişi önlemek için
+EventListeners()
+function EventListeners(){
+    forms.addEventListener("submit", newİtems);
+    function newİtems(a) {
+        if (text.value === "") { alert("Lütfen veri giriniz.") } else {//İf blogu metinsiz yazı girmeyi engelliyor.
+            a.preventDefault(); // Sayfanın  yeniden yüklenmesini iptal ediyor.
 
-    //Li oluşturma
-    let liDom = document.createElement("li");
-    liDom.className = "list-group-item list-group-item-secondary";
-    liDom.innerHTML = `${text.value} <a href="#" class="delete-item float-right"><i class="fas fa-times"></i></a>`;
-    taskList.appendChild(liDom);
-    text.value = "" // Veri girişi sonrası inputun sıfırlanması için
-    //Sayfanın her seferinde yenilenmesini önlemek için
-    a.preventDefault();}
-}
+            //Li elemanını oluşturma
+            const liDom = document.createElement("li");
+            liDom.innerHTML = `${text.value}`;
+            liDom.classList = "list-group-item list-group-item-secondary";
 
-function deleteİtem(a) {
-    if (confirm("Silmek istediginze emin misiniz")) {
-        if (a.target.className === "fas fa-times") {
-            console.log(a)
-            a.target.parentElement.parentElement.remove()
+            //A linkini oluşturma
+            const ahref = document.createElement("a");
+            ahref.setAttribute("href", "#")
+            ahref.classList = "delete-item float-right"
+            ahref.innerHTML = `<i class="fas fa-times"></i>`;
+
+            //A'yı liye-Li yi UL ye baglama
+            liDom.appendChild(ahref);
+            taskList.appendChild(liDom);
+
+            text.value = "" // Veri girişi gerçekleştikten sonra inputtaki veriyi silmek için
         }
     }
-    a.preventDefault()
 }
 
-function allremove(b) {
-    if (confirm("Tüm Elemanları silmek istediginze emin misiniz")) {
-    taskList.childNodes.forEach(function (item){
-        if(item.nodeType ===1){item.remove();}
-    })
-    //tasklist.innerHTML =""; Alternatif yöntem
+deleteAll.addEventListener("click", deleteAlls)
+
+function deleteAlls(b) {
+    if (confirm("Tüm listeyi silmek istediginize emin misiniz.")) {
+        for (let i = 0; i < taksList.children.length; i++) {
+            taksList.children[i].remove()
+        }
     }
 }
 
 
 
-/*
-
-
-
-
-
-
-localStorage.setItem(`${text.value}`,"2");
-
-
-/*text.addEventListener("click", addItem);
-del.addEventListener("click", deleteItem);
-clear.addEventListener("click", clearItem);
-
-function addItem(e) {
-    sessionStorage.setItem(text.value,"2")
-}//Ekleme Fonsiyonu
-
-function deleteItem(e){
-    sessionStorage.removeItem(deleteKey.value);
-}//Silme Fonsiyonu
-
-function clearItem(e){
-    sessionStorage.clear();
-}//Tümünü Sil Fonsiyon*/

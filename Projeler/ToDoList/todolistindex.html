@@ -26,7 +26,7 @@
 					<div class="input-group mb-3">
 						<input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="Type a new task" aria-describedby="btnAddNewTask">
 						<div class="input-group-append">
-							<button class="btn btn-danger" type="button" id="btnAddNewTask">
+							<button class="btn btn-danger" type="submit" id="btnAddNewTask">
 								<i class="fas fa-plus"></i>
 							</button>
 						</div>
@@ -43,7 +43,26 @@
 			</div>
 
 			<ul id="task-list" class="list-group">
-			
+				<li class="list-group-item list-group-item-secondary">Todo 1
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+				<li class="list-group-item list-group-item-secondary">Todo 2 
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+				<li class="list-group-item list-group-item-secondary">Todo 3
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+				<li class="list-group-item list-group-item-warning">Todo 4
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
 			
 			</ul>
 
@@ -53,6 +72,10 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script src="todolist.js"></script>
+
+
+
+
 </body>
 
 </html>
