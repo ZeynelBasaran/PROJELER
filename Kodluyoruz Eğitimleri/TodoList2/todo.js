@@ -1,49 +1,64 @@
-const btnekle = document.querySelector("#liveToastBtn");
-const inputtext = document.querySelector("#task")
-const ul = document.querySelector("#list")
-const li2 = document.getElementsByTagName("li")
-const teklisil = document.querySelectorAll(".material-symbols-outlined")
+let list = document.querySelector("#list")
+let task = document.querySelector("#task")
+let ekleButonu = document.querySelector("#liveToastBtn");
+let spann = document.querySelectorAll(".material-symbols-outlined")
+let listElemanı = document.querySelectorAll(".text-decoration-line-through")
 
-console.log(teklisil)
-btnekle.addEventListener("click", addList);
+ekleButonu.addEventListener("click", addİtem)
 
-
-[...teklisil].forEach(item => { console.log(item) })
-
-function addList(a) {
-    if (inputtext.value === "") {
-        alert("Lütfen veri giriniz")
+function addİtem(a) {
+    if (task.value === "") {
+        alertt(); a.preventDefault();
+    } else if (task.value === " ") {
+        alertt(); a.preventDefault();
     } else {
-        let li = document.createElement("li");
-        li.classList = "text-decoration-line-through";
-        li.innerHTML = inputtext.value;
-        ul.appendChild(li);
-        let span = document.createElement("span");
-        span.classList = "material-symbols-outlined";
-        span.innerHTML = "close";
-        li.appendChild(span);
-    }
-};
+        a.preventDefault();
+        let liDom = document.createElement("li");
+        liDom.classList = "text-decoration-line-through";
+        liDom.innerHTML = `${task.value}`;
+        list.appendChild(liDom)
 
-teklisil.forEach(item => {
-    item.addEventListener('click', (event) => {
-        if (confirm("Silmek istediğinize emin misiniz?")) {
-            event.target.parentElement.remove();
+        let spanDom = document.createElement("span");
+        spanDom.classList = "material-symbols-outlined"
+        spanDom.innerHTML = `close`;
+        liDom.appendChild(spanDom);
+        localStorage.setItem(`${task.value}`,"Javascript")
+        task.value = "";
+        
+    }
+}
+
+// Tıklanan öğeyi silme
+spann.forEach(function (li) {
+    li.addEventListener('click', function () {
+        if (confirm("Silmek istediginize emin misiniz.")) {
+            this.parentElement.remove();
+            localStorage.clear();
+            
         }
+
+    })
+})
+
+//Liste elemanına active ekleme
+listElemanı.forEach(function (li) {
+    li.addEventListener("click", function () {
+        // "checked" class'ını toggle etme
+        this.classList.toggle("checked");
     });
 });
 
-const panels= document.querySelectorAll(".text-decoration-line-through");
 
-panels.forEach(panel=>{
-    panel.addEventListener("click",()=>{
-        panel.classList.add("checked");// Tıklanan panele active özelligi ekliyor.
-    })
-    removeActive()
-})
-function removeActive(){ // ClassList i siliyor 
-    panels.forEach(panel =>{
-        panels.classList.remove("checked")
-    })
-} 
 
+
+
+
+
+
+
+function alertt() {
+    let al = document.querySelector(".alertt");
+    al.innerHTML = `<div class="alert alert-primary" role="alert">
+  Lütfen <a href="#" class="alert-link">veri</a> Giriniz
+</div>`
+}

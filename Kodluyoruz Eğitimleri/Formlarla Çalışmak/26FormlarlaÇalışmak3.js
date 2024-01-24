@@ -30,6 +30,7 @@ function addİtem(a) {
         madde.innerHTML = ` ${username.value} `
         madde.classList = "list-group-item d-flex justify-content-between align-items-center"
         ul.appendChild(madde);
+        
         const puan = document.createElement("span");
         puan.classList = "badge bg-primary rounded-pill"
         puan.innerHTML = ` ${score.value} `
