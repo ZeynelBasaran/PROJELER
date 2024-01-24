@@ -20,6 +20,8 @@ console.log(a);
 //            Element Silme
 const taksList = document.querySelector("#task-list");
 // Komple listeyi silmek taksList.remove()
+//  taskList.innerHTML =""  Farklı bit yöntem
+
 // Todo 4 Silindi alt elemanlarıda sayıyor taksList.childNodes[7].remove(); 
 // Direkt parentsları sayarask todo1 silindi taksList.children[1].remove();
 //Alternatif silim taksList.removeChild(taksList.children[2]);
@@ -28,5 +30,9 @@ for (let i = 0; i < taksList.children.length; i++) {
     taksList.children[i].removeAttribute("class");
 } // For metodu ile tüm elemanların class'ını silmek
 
+//      Elementi mouse ile seçme
+taskList.addEventListener("click",removeİtem)
 
-console.log(taksList)
+function removeİtem(a){
+    console.log(a.target)// Target ile elemnti seçme
+}

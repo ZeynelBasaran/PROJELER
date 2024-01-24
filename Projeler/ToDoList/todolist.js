@@ -5,13 +5,20 @@ const deleteAll = document.querySelector("#btnDeleteAll")
 const taskList = document.querySelector("#task-list");
 const itemss = ["To Do 1", "To Do 2", "To Do 3", "To Do 4"]
 const forms = document.querySelector("form")
-const close = document.querySelectorAll(".fa-times")
+let todos;
+
+for (i=0; i<)
+
 
 
 
 EventListeners()
-function EventListeners(){
-    forms.addEventListener("submit", newİtems);
+function EventListeners() {
+    forms.addEventListener("submit", newİtems); //Submit butonuyla item ekleme 
+    deleteAll.addEventListener("click", deleteAlls); //Tüm elemanları silme fonksiyonu
+    taskList.addEventListener("click", remove); // Eleman silme fonskiyonu
+
+
     function newİtems(a) {
         if (text.value === "") { alert("Lütfen veri giriniz.") } else {//İf blogu metinsiz yazı girmeyi engelliyor.
             a.preventDefault(); // Sayfanın  yeniden yüklenmesini iptal ediyor.
@@ -32,19 +39,35 @@ function EventListeners(){
             taskList.appendChild(liDom);
 
             text.value = "" // Veri girişi gerçekleştikten sonra inputtaki veriyi silmek için
+            
         }
     }
-}
 
-deleteAll.addEventListener("click", deleteAlls)
+    function deleteAlls(b) {
+        if (confirm("Tüm listeyi silmek istediginize emin misiniz.")) {
+          /* for (let i = 0; i <= taskList.children.length; i++) {
+                  taskList.childNodes[i].remove()
+              } 
+          taskList.childNodes.forEach(function (item) {
+                if (item.nodeType === 1) {
+                    item.remove();
+                }
+            }) */  //Yukarıdaki 2 koda tamamiyle silmiyor. hatalı
 
-function deleteAlls(b) {
-    if (confirm("Tüm listeyi silmek istediginize emin misiniz.")) {
-        for (let i = 0; i < taksList.children.length; i++) {
-            taksList.children[i].remove()
+            taskList.innerHTML ="" //Tüm listeyi silmek için farklı bir yöntem
         }
     }
+
+    function remove(c) { //Target ile tıklanan yerin class değeri seçtigimiz class ile eşleşiyorsa elementi parentın parentını alarak onay ekranıyla siliyoruz.
+        if (c.target.className === "fas fa-times") {
+            if (confirm("Bu Elemanı silmek istediginize emin misiniz?")) {
+                c.target.parentElement.parentElement.remove();
+            }
+        }
+    }
+
 }
+
 
 
 
