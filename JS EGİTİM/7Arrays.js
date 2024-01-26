@@ -2,7 +2,7 @@ let isim;
 let birthday;
 let mix;
 let sıralama;
-let silmeekleme;
+let silmekleme;
 isim = ["Ahmet", "Arda", "Kerem", "Aslı", "Mert"]
 birthday = [1990, 1890, 1992, 1999, 2005]
 mix = ["ahmet", 1990, "Leyla", 2005, undefined, true, null, ["programlama", "yazılım", 1990]]
@@ -41,22 +41,26 @@ console.log(birthday); //Bunu ayrı bir degişkene içine alabiliriz. let lastİ
 birthday.shift(); // Başdaki öğeyi listeden çıkarmak içim (SHİFT)
 console.log(birthday);
 
-let index = birthday.indexOf(1992);  // Dizideki elemanın kaçıncı index oldugunu görmek için (İNDEXOF) yoksa-1 döndürür (lastindexof) 2 adet varsa sonuncunun indexini söyletr   
+//(İNDEXOF) Dizideki elemanın kaçıncı index oldugunu görmek için  yoksa-1 döndürür (LASTİNDEXOF) 2 adet varsa sonuncunun indexini söyletr   
+let index = birthday.indexOf(1992);  
 console.log("index:" + index);
 
-isim.reverse();    // Diziyi terse çevirmek index tam terse döner (REVERSE)
+//(REVERSE) Diziyi terse çevirmek index tam terse döner
+isim.reverse();     
 console.log(isim)
 
 
-
-sıralama.sort();   //Dizi deki yılları ve stringleri alfebeye göre sıralama (SORT)
+//(SORT) Dizi deki yılları ve stringleri alfebeye göre sıralama 
+sıralama.sort();   
 console.log(sıralama)
 
+//(CONCAT) Dizileri birleştirmek 
 let veri;
-veri = isim.concat(birthday);  // Dizileri birleştirmek (CONCAT)
+veri = isim.concat(birthday);  
 console.log(veri)
 
-silmekleme.splice(1, 0, "eklenen"); // (SPLİCE) metot diziye hem eleman eklemek için hem de eleman silmek için. Metodun ilk parametresi işlemin yapılacağı index numarasını, ikinci parametre ise kaç elemanın silineceğini belirtir.
+// (SPLİCE) metot diziye hem eleman eklemek için hem de eleman silmek için. Metodun ilk parametresi işlemin yapılacağı index numarasını, ikinci parametre ise kaç elemanın silineceğini belirtir.
+silmekleme.splice(1, 0, "eklenen"); 
 console.log(silmekleme)
 
 //(İSARRAY) sorgusu ile degişken içerisindeki bilginin array olup olmadıgı kontrol edilir.
@@ -84,7 +88,7 @@ console.log(alisverisListem.toString())
 //(JOİN)Parantez içerisine dizi elemanları arasına koymak istediğimiz string'i parametre olarak girebiliriz. Eğer bir parametre vermezsek virgül bastırır.
 console.log(alisverisListem.join("---")) 
 
-//ES6 ile gelen liste birleştirme 
+//ES6 ile gelen (LİSTE BİRLEŞTİRME) 
 let list1=[1,2,3]
 let list2=[4,5,6]
 let alllist = [... list1 , ...list2]
@@ -104,13 +108,13 @@ const usere= [
 const active= usere.filter(user=>user.isActive) //Sadece aktif elemanları getirdi.
 console.log(active)
 
-//(MAP) 
+//(MAP) Arraydeki verileri istedigimiz formatta yeniden düzenlemek için kullanılır
 const NEW_USER = list5.map(user => user.toLowerCase()) ;
 console.log(NEW_USER)
 
 
 const USERS_OBJ=list5.map(item =>{ 
-    return { 
+    return {   // İstedigimiz gibi bir array oluşturduk 
         username: item, 
         shortname: `${item[0]}`, 
         NewName: `${item[0].toUpperCase()}${item.slice(1).toLowerCase()}`
@@ -122,3 +126,31 @@ console.log(USERS_OBJ);
 let js = "Javascript"
 let parca = js.split("")
 console.log(parca)
+
+//(FİND) Aradığımızda kritere uyan ilk objeyi geri döndürür.
+const numbers = [10, 20, 30, 40, 50];
+
+const result = numbers.find(function(number) {
+  return number > 30;
+});
+
+console.log(result)
+//(FİNDİNDEX) aranan elemanın indexini döndürür eleman yoksa -1 döndürür
+
+const index1 = numbers.findIndex(function(number) {// 30'dan büyük olan ilk sayının indeksini bulma
+
+    return number > 30;
+  });
+  console.log(index1)
+
+//(REDUCE) Array içerisindeki verileri toplamak için
+
+//(SOME) Array içerisindeki elemanları bir şarta tutmak için eleman varsa true yoksa false döner
+//(EVERY)
+
+//(FLAT) Array içerisinde farklı arraylerde olsa hepsini tek bir liste olarak veriyor.
+let myAr = [1,2,3,4,5, [6,7],[8,9]]
+console.log(myAr.flat(1))
+
+
+

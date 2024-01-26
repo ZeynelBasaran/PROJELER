@@ -58,3 +58,9 @@ console.log(veri)
 
 // (İNCLUDEX) String içerisinde varlık sorgulama mevcutsa true döner.
 // (TRİM) String içerisindeki boşlukları silmek için
+
+//(STARTWİTH) Bir metnin verdiginiz kelimeyle başlayıp başlamadıgını soruyor.True-False
+//(ENDWİTH) Bir metnin verdiginiz kelimeyle bitip bitmedigini soruyor.True-False
+let kab="kablosuz kedi";
+console.log(kab.endsWith("di"))
+console.log(kab.startsWith("kab"))
