@@ -1,4 +1,4 @@
-/*
+
 let otTur = prompt("Otun türü Kekik/Nane/Fesleğen/Reyhan");
 let OtMiktar = Number(prompt("Kaç Adet Sipariş etmek istersiniz."));
 
@@ -46,7 +46,8 @@ function fiyatHesapla(a, b) {
     }
 
 }
-*/
+
+/*
 let deger = Math.floor(Math.random() * 100);
 function yenidendene() {
     const tahmin =Number(prompt("Lütfen bir sayı giriniz."));
@@ -71,5 +72,6 @@ try {    yazdır("merhaba")
  console.error()
 }
 
+*/
 
 
