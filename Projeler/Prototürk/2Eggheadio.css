@@ -20,6 +20,10 @@ header {
     background-color: #141618;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top:0;
+    z-index: 10;
+
 }
 
 header .header-left {
@@ -122,19 +126,15 @@ header .header-right .header-right3 a button {
 }
 
 /*Header 2 */
-.header2 {
+.header2{
     width: 100%;
     min-height: 500px;
     background-color: #303647;
-
-}
-
-.header2-alt {
     display: flex;
     max-width: 100%;
-    max-width: 100%;
-    justify-content: space-around;
-
+    max-height: 500px;
+    justify-content: center;
+    align-items: center;
 }
 
 .header2-alt1 {
@@ -142,18 +142,19 @@ header .header-right .header-right3 a button {
    
 }
 
-
 .header2-alt1 h1 {
     color: white;
-
+    margin-bottom: 20px;
+    line-height: 56px;
+    
 }
 
 .header2-alt1 p {
     color: white;
-    margin-top: 20px;
+   
 }
 
-.header2-alt1 a button {
+.btn {
     color: white;
     background-color: #316aff;
     margin-top: 40px;
@@ -163,20 +164,21 @@ header .header-right .header-right3 a button {
     border-radius: 0.375rem;
     text-transform: uppercase;
     cursor: pointer;
-
-
+    letter-spacing: 1px;
+    
+}
+.btn:hover{
+    transform: scale(1.05);
 }
 
 
 .header2-alt1 img {
     max-width: 100%;
     max-height: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
 
 }
 
-/* Section */
+/* Section1 */
 .section1 {
     display: flex;
     width: 100%;
@@ -184,52 +186,63 @@ header .header-right .header-right3 a button {
     background-color: rgb(196, 203, 205);
 }
 
-.logos {
-    width: 200px;
-    margin: auto;
-    margin-left: 200px;
+.logos{
     display: flex;
     flex-direction: column;
     width: 50%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+ 
 }
 
-.text {
-
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
-    margin: auto;
-    text-align: left;
+    max-height: 100%;
     word-spacing: 0.5rem;
-    margin-right: 400px;
+    padding:0 330px 0 0;
+    
+    
+}
+.section1 .logos .text h1{
+    text-align: left;
 }
 
 .text p {
     margin-top: 30px;
-    line-height: 1.4rem;
+    line-height: 28px;
+    text-align: left;
 }
 
 .section1 .logos div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
-    margin-left: 15px;
     cursor: pointer;
-
-
-
+    border-radius: 14px;
+    margin: 12px 0 0 24px;
+    
+}
+.section1 .logos .logos-div:hover{
+    transform: scale(1.05);
 }
 
 .section1 .logos div div a img {
     width: 50px;
     height: 50px;
+    
 
-
+    
 }
 
 .section1 .logos .logos-div {
     background-color: rgb(255, 255, 255);
     width: 150px;
     height: 150px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);
 }
 
 
@@ -288,6 +301,11 @@ header .header-right .header-right3 a button {
 .section2 .block-q span {
     color: gray;
     
+    
+}
+.section2 .block-q .material-symbols-outlined{
+    margin-bottom: 40px;
+    font-size: 30px;
 }
 
 /****   Section 3 */
@@ -308,15 +326,10 @@ header .header-right .header-right3 a button {
 
 }
 
-.section3 .text3 button {
-    background-color: rgb(68, 120, 85);
-    color: white;
-    width: 300px;
-    height: 30px;
-    border-radius: 0.375rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 30px;
+.green {
+  background-color: green;
+  padding: 3px;
+  font-size: 12px;
 
 }
 
