@@ -124,29 +124,24 @@ header .header-right .header-right3 a button {
 /*Header 2 */
 .header2 {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     background-color: #303647;
 
 }
 
 .header2-alt {
     display: flex;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    max-width: 100%;
+    max-width: 100%;
+    justify-content: space-around;
+
 }
 
 .header2-alt1 {
     max-width: 50%;
-    height: 500px;
+   
 }
 
-.header2-alt2 {
-    max-width: 50%;
-    height: 500px;
-    margin-left: 200px;
-}
 
 .header2-alt1 h1 {
     color: white;
@@ -172,8 +167,12 @@ header .header-right .header-right3 a button {
 
 }
 
-.header2-alt2 img {
-    max-width: 500px;
+
+.header2-alt1 img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
@@ -205,6 +204,7 @@ header .header-right .header-right3 a button {
 
 .text p {
     margin-top: 30px;
+    line-height: 1.4rem;
 }
 
 .section1 .logos div {
@@ -281,25 +281,31 @@ header .header-right .header-right3 a button {
     text-align: center;
     word-spacing: 0.2rem;
     color: gray;
+    line-height: 2.5rem;
+    
 }
 
 .section2 .block-q span {
     color: gray;
-    margin-bottom: 20px
+    
 }
 
 /****   Section 3 */
 .section3 {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background-color: rgb(196, 203, 205);
     display: flex;
+    justify-content: center;
     padding-left: 300px;
     padding-right: 300px;
 }
 
 .section3 .text3 {
-    max-width: 400px;
+    width: 500px;
+    height: 400px;
+    word-spacing: 0.2rem;
+
 }
 
 .section3 .text3 button {
@@ -314,83 +320,103 @@ header .header-right .header-right3 a button {
 
 }
 
-.section3 .text3 h1 {
+.section3 .text3 p {
+    line-height: 1.4rem;
+}
+
+.section3 .text3 h3 {
     margin-bottom: 20px;
+
 }
 
 .section3 .image {
-    max-width: 400px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 
 /**** Footer *******/
-footer{
+footer {
     background-color: #141618;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-footer .foot{
+
+footer .foot {
     display: flex;
     flex-direction: column;
 }
-footer .foot .foot-h{
+
+footer .foot .foot-h {
     margin-bottom: 20px;
 
 }
-footer .foot .foot-h a{
+
+footer .foot .foot-h a {
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
 
 }
-footer .foot .foot-l{
+
+footer .foot .foot-l {
     display: flex;
 }
-footer .foot .foot-l ul li a{
-    color:rgba(255, 255, 255, 0.6);
+
+footer .foot .foot-l ul li a {
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-size: 0.8rem;
 }
-footer .foot .foot-l ul li{
-   margin-top: 15px;
-   
+
+footer .foot .foot-l ul li {
+    margin-top: 15px;
+
 }
-footer .foot .foot-l .ul2{
+
+footer .foot .foot-l .ul2 {
     margin-left: 20px;
 }
 
-footer .foot .foot-t{ 
+footer .foot .foot-t {
     display: flex;
-    color:rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
-footer .foot .foot-t ul{
+
+footer .foot .foot-t ul {
     display: flex;
     margin-top: 20px;
 }
-footer .foot .foot-t .ft-li{
+
+footer .foot .foot-t .ft-li {
     margin-left: 35px;
 }
+
 footer .foot .foot-t ul li a {
-    color:rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-size: 0.8rem;
 }
 
-footer .foot .foot-t ul li a:hover,footer .foot .foot-l ul li a:hover{
-    color:white
+footer .foot .foot-t ul li a:hover,
+footer .foot .foot-l ul li a:hover {
+    color: white
 }
 
 
-footer .search h5{
-   color:white;
-   margin-bottom: 15px;
-   
+footer .search h5 {
+    color: white;
+    margin-bottom: 15px;
+
 }
-footer .search div input{
-    background-color:rgb(14, 16, 18);
+
+footer .search div input {
+    background-color: rgb(14, 16, 18);
     color: white;
     margin-right: 20px;
     position: relative;
@@ -400,18 +426,19 @@ footer .search div input{
     padding: 2px 30px 2px 10px;
     border-radius: 0.375rem;
 }
-footer .search .search-div{
+
+footer .search .search-div {
     position: relative;
 }
-footer .search div span{
+
+footer .search div span {
     position: absolute;
     left: 274px;
-    top:3px;
+    top: 3px;
     font-size: 25px;
 }
-footer .search div span:hover{
+
+footer .search div span:hover {
     background-color: #316aff;
     cursor: pointer;
 }
-
-
