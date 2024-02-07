@@ -1,0 +1,4 @@
+
+//NodeList Array Fonk ile seçimi
+//Class selectorall ile seçilir ve döngü oluşturulur.
+panels.forEach((panel) => {console.log(panel) } )
