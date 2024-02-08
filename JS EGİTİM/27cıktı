@@ -1,4 +1,25 @@
 
-//NodeList Array Fonk ile seçimi
+//NodeList Arrow Fonk ile seçimi
 //Class selectorall ile seçilir ve döngü oluşturulur.
 panels.forEach((panel) => {console.log(panel) } )
+
+//HTML Collection(getElementByTagName) Arrow fonk ile seçimi
+[...panels].forEach(element => {
+    console.log(item)
+});
+
+
+const panels = document.querySelectorAll('h1')
+panels.forEach((title, i) => {
+  title.style.fontSize = '24px' // all panels will have 24px font size
+  if (i % 2 === 0) {
+    title.style.fontSize = '20px'
+  } else {
+    title.style.fontSize = '30px'
+  }
+})
+
+//For Döngüsü kısa yazım
+for (const h1 of panels){
+  console.log(h1)
+}

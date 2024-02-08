@@ -1,6 +1,9 @@
 let veri;
 
 /*
+
+getelement metodları HTML collection getirir => foreach ile gezilmez. kapalı parantez yöntemi hariç
+queryselector metodları nodelist getirir for ve foreach ile gezilir
 **************.    getElementsByClassName İndex seçerek tek obje degiştirmek   **********
 veri=document.getElementsByClassName("list-group-item");Tüm öğeler
 console.log(veri)

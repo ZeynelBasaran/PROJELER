@@ -1,7 +1,8 @@
 // Yeni Element oluşturulup - oluşturulan olan elemeni var olan degiştirmek
 const cardHeader = document.querySelector(".card-header")
-const h2 = document.createElement("h2")
-h2.setAttribute("class", "card-header") // Set attribute içerideki classı direkt ezer ve siler add yöntemi sadece ekleme yapar 
+
+const h2 = document.createElement("h2") // Element oluşturma
+h2.setAttribute("class", "card-header") // Elemente class ekleme Set attribute içerideki classı direkt ezer ve siler add yöntemi sadece ekleme yapar 
 h2.appendChild(document.createTextNode("Yeni Logo"))
 const parent = document.querySelector(".card")
 parent.replaceChild(h2, cardHeader);
@@ -19,8 +20,13 @@ console.log(value);
 //value = link.classList[1];  // Class isimlerini tek tek çagırmak
 //console.log(value);
 
+
 link.classList.add("new"); // Yeni class eklemek
-//linl.classList.remove("new") Class silmek için
+link.classList.toggle("new");//İlgili Classı varsa sil yoksa ekle 
+link.classList.remove("new") //Class silmek için
+
+link.textContent =`Direkt metin ekleme HTML Etiket çalışmaz`
+link.innerHTML = `Burada HTML Etiketleri çalışır `
 
 value = link.getAttribute("href"); //Hrefe erişildi.
 console.log(value);
