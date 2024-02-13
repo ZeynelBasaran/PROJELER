@@ -25,6 +25,14 @@ h2 {
   align-items: center;
   margin: 40px 0;
 }
+.btn-container button{
+  cursor: pointer;
+}
+.btn-container button:hover{
+  background-color: black;
+  color: white;
+  outline: 0;
+}
 .btn-item {
   margin-left: 15px;
 }

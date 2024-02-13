@@ -14,9 +14,9 @@ let toplama = (...numbers) => {
     console.log(numbers)
 }
 
-/************ FOREACH metodu forEach: Bir dizi elemanlarını sırasıyla gezer. "element", "index" ve dizinin kendisi ile callback fonksiyonunu parametre olarak alabilir. "index" ve dizinin kendisi isteğe bağlı olarak parametre olarak verilmeyebilir.*/
+/************ FOREACH metodu forEach: Bir dizi elemanlarını sırasıyla gezer. "element", "index" ve dizinin kendisi ile callback fonksiyonunu parametre olarak alabilir. "index" ve dizinin kendisi isteğe bağlı olarak parametre olarak verilmeyebilir. deneme*/
 const numbers = [1,3,5,7,9]
-let total = 0 ;
+let total = 0 ;  
 numbers.forEach(number =>total+=number)
 console.log(total)
 

@@ -65,4 +65,7 @@ console.log(
   eleman.closest('ul')
 )
 
-
+//getBoundingClientRect() Seçilen öğenin boyutlarını ve pozisyon bilgilerini DOMRect objesi olarak döndürür.
+//hasAttribute() Seçilen elemana ait belirlenen niteliğin olup olmadığını kontrol eder.
+//matched() Seçilen elemanın belirtilen css seçicisiyle eşleşip eşleşmediğini kontrol eder.
+//toggleAttribute() Seçilen elemana belirtilen nitelik varsa kaldırılmasını yoksa eklenmesini sağlar.
