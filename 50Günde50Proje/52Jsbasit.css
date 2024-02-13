@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+.proje1{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(185, 185, 247);
+    color: white;
+    text-align: center;
+    margin:5px;
+    border: solid 1px white ;
+    border-radius: 20px;
+    
+}
+
+.gizle{
+    display: none;
+    
+}
+.proje3{
+    background-color: rgb(185, 185, 247);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px white ;
+    border-radius: 20px;
+    margin:5px;
+    
+}
+.proje3 input{
+    display: block;
+    color:white;
+    margin:10px;
+    text-align: left;
+    
+}
+.proje3 span{
+    margin-left:25px;
+    text-align: left;
+    display: block;
+    color:white;
+    margin-top: 10px;
+}
