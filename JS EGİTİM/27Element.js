@@ -68,4 +68,20 @@ console.log(
 //getBoundingClientRect() Seçilen öğenin boyutlarını ve pozisyon bilgilerini DOMRect objesi olarak döndürür.
 //hasAttribute() Seçilen elemana ait belirlenen niteliğin olup olmadığını kontrol eder.
 //matched() Seçilen elemanın belirtilen css seçicisiyle eşleşip eşleşmediğini kontrol eder.
-//toggleAttribute() Seçilen elemana belirtilen nitelik varsa kaldırılmasını yoksa eklenmesini sağlar.
+//toggleAttribute() Seçilen elemana belirtilen nitelik varsa kaldırılmasını yoksa eklenmesini sağlar
+
+//preventDefault Bazı etiketlerin varsayılan davranışları vardır. Örneğin bir a etiketine basınca ilgili linke yönlendirilirsiniz, ya da form içinde tipi submit olan bir button a basınca formu gönderir vs. Bu gibi varsayılan davranışları engellemek için preventDefault kullanabilirsiniz. Örneğin;
+const aTags = document.querySelectorAll('a')
+aTags.forEach(a => {
+		a.addEventListener('click', e => {
+			// eger link dis bir baglanti iceriyorsa
+			// varsayilan davranisi engelle
+			if (e.target.getAttribute('href').includes('http')) {
+				if (!confirm('Guvenli olmayan bir siteye gitmeye calisiyorsunuz?')) {
+					e.preventDefault()
+				}
+			}
+		})
+	})
+
+  //stopPropagation Varsayılan yayılmayı engellemek içinse bu özellik kullanılır. Bunu bir örnekle anlatmak gerekirse, iç içe 3 tane etiketimiz olduğunu düşünelim. Ve bu 3 etiketin de bir click olayı olsun. Eğer 3. etikete tıklarsam hepsi çalışır bunu ekledigim event ise çalışmaz iç içede olsa yanlızca 3. etiket çalışır 
