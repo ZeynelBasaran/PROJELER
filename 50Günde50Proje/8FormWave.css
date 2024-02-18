@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: steelblue;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    font-size: 16px;
+    
+}
+.card{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0,0.4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around
+
+}
+.card .mail,.card .pass,.card .btn{
+    width: 80%;
+
+}
+
+.card .mail input,.card .pass input{
+    background-color: transparent;
+    width: 100%;
+    outline: 0;
+    font-size: 1rem;
+    padding: 15px 0px;
+    border: none;
+    border-bottom: solid white 2px;
+    color: white;
+    
+    
+}
+.card .mail input:focus,.card .pass :focus{
+    outline: 0;
+    border-bottom-color: lightblue;
+    color: lightblue;
+}
+
+.card .btn a{
+    font-size: 1rem;
+    color: black;
+    outline: 0;
+    text-decoration: none;
+    font-family: inherit;
+    
+
+
+}
+.card .btn{
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border:0;
+}
+.card .btn:active{
+    transform: scale(0.98);
+}
+.mail,.pass{
+    position: relative;
+}
+
+.mail label,.pass label{
+    position: absolute;
+    top:15px;
+    left:0;
+    
+}
+.card div label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265 , 1.55);
+    
+}
+.card div input:focus+ label span{
+    transform: translateY(-30px);
+    color: lightblue;
+}
+.card div input:valid+ label span{
+    color: lightblue;
+    
+    
+}
+
+
+
