@@ -34,3 +34,18 @@ fetch('https://jsonplaceholder.typicode.com/todos/1/posts').then(
         
     }))
 
+
+//Fetch ile Farklı bir veri alma yöntemi daha kısa yazım
+async function generateJoke2() {
+    const config = { // Config giriş için istenen talebe cevap verilen yer.
+        headers: {
+            Accept: "application/json",
+        },
+    }
+    const res = await fetch('https://icanhazdadjoke.com', config) // Bu kısım 
+    const data = await res.json()
+    console.log(data)
+    console.log(data.joke)
+}
+generateJoke2()
+
