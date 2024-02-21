@@ -7,7 +7,7 @@ const itemss = ["To Do 1", "To Do 2", "To Do 3", "To Do 4"]
 const forms = document.querySelector("form")
 let todos;
 
-for (i=0; i<)
+
 
 
 

@@ -14,34 +14,65 @@ body {
 }
 
 .container {
-    width: 50%;
+    width: 80%;
     height: 100vh;
     display: flex;
     flex-direction: column;
    
 }
+.container h1{
+    text-align: center;
+}
 .container .ques{
     border: 1px solid gray ;
     border-radius: 10px;
     margin: 5px;
-    position: relative;
     height: 70px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
 }
-.container .ques span{
-    position: absolute;
-    right:  10px;
-    top:15px;
-
-
-}
-.container .ques h3{
-    padding: 0 0 0 15px;
-}
-.container .ques p{
-    padding: 0 0 0 15px;
-}
-
 .container .ques.active{
-    height: 150px;
+    height: 200px;
     background-color: white;
 }
+
+
+.container .ques h3{
+    padding: 0px 30px 0 15px;
+}
+.container .ques p{
+    display: none;
+    margin: 30px 15px 0;
+}
+.container .ques.active p{
+    display: block;
+}
+.container .ques button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top:20px;
+    right:10px;
+}
+.container .ques button .close{
+    display: none;
+
+}
+.container .ques.active button .slice{
+    display: none;
+
+}
+.container .ques.active button .close{
+    display: block;
+
+}
+
+
+

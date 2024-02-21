@@ -7,8 +7,7 @@ class Book {
     }
 }
 
-//---Sayfa açıldıgında kayıtlı kitapları gösterme
-document.addEventListener('DOMContentLoaded', UI.displayBooks) 
+
 
 
 //---Kayıtlı kitapları görüntüleme,Ekleme,İnput Vauleri sıfırlama ve silme fonksiyonları
@@ -46,7 +45,6 @@ class UI {
     }
 
     static deleteBook(el) { // Kitap silme fonksiyonu
-        console.log(el)
         if (el.classList.contains("delete")) {
             if (confirm("Silmek istediginize emin misiniz.")) {
                 el.parentElement.parentElement.remove()
@@ -66,6 +64,8 @@ class UI {
 
     
 }
+//---Sayfa açıldıgında kayıtlı kitapları gösterme
+document.addEventListener('DOMContentLoaded', UI.displayBooks) 
 
 
 //---Sınıfa yeni kitap ekleme
