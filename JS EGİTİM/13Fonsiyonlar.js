@@ -40,3 +40,12 @@ function ehliyetHesapla(dogumYili, name){
 }
 ehliyetHesapla(2010, "Esra")
 ehliyetHesapla(2000,"Mehmet")
+
+
+//Immediate Func  Tek seferlik çalışan fonksiyon
+(function(name){
+    var days = ["Sunday","Monday","Tuesday", "Wednesday","Friday","Saturday",]
+    var today = new Date();
+    var msg = `Welcome ${name}. Today is ${[today.getDate()]}`
+    console.log(msg)
+}("Levent"))
