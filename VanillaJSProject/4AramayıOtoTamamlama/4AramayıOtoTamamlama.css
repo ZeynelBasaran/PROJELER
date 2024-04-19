@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.searchbar {
+    width: 400px;
+    color: white;
+    margin: 30px;
+    text-align: center;
+}
+
+.searchbar input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+
+}
+
+.bar {
+    width: 400px;
+}
+
+.bardiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.lidom {
+    margin: 20px 0 ;
+    background-color: steelblue;
+    padding: 20px;
+    list-style: none;
+    width: 100%;
+}

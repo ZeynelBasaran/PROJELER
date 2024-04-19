@@ -27,3 +27,6 @@ let birthday = new Date (1988,0,12);
 console.log(zaman.getFullYear()-birthday.getFullYear()) // Yaş hesaplama
 console.log(zaman.getMonth()-birthday.getMonth())  // Ay hesaplamak 0. ay ocak unutma
 
+const days = ["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"]
+const months = ["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"]
+

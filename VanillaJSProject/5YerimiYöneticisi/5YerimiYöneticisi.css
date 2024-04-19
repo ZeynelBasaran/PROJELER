@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100wh;
+    font-size: 14px;
+}
+header{
+    margin: 20px 0;
+    font-size: 2rem;
+}
+main{
+    background-color: rgb(218, 210, 210);
+    height:300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1{
+    margin: 20px 0;
+}
+main label{
+   margin-top: 10px;
+   font-weight: bold;
+   font-size: 1rem;
+}
+main input{
+    margin-top: 5px;
+    width: 80%;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+}
+main button{
+    padding: 10px 20px;
+    outline: 0;
+    cursor: pointer;
+    background-color: steelblue;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+main button a{
+    color: white;
+    text-decoration: none;
+}
+section{
+    margin-top: 20px;
+    background-color: rgba(218, 210, 210,0.7);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#divalert{
+    margin: 50px 0;
+    display:none;
+}
+section div{
+    display: flex;
+    padding: 20px;
+    justify-content:space-between; 
+}
+section div li{
+    list-style: none;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    
+}
+section div button a{
+    text-decoration: none;
+    color: white;
+    
+}
+section button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.btn1{
+    background-color: gray;
+    margin-left: 100px;
+}
+.btn2{
+    background-color: red;
+    color: white;
+}
+

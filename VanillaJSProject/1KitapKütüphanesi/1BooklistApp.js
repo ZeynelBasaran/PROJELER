@@ -15,7 +15,6 @@ class UI {
     static displayBooks() { 
         const books = Store.getBooks();//Local Stroga'dan kitaplatı degişkene çekme
         
-
         books.forEach((book) => UI.addBookTolist(book)) //Çekilen kitapları ekrana ekleme 
 
     }
@@ -53,6 +52,7 @@ class UI {
         }
 
     }
+    
     static showAlert(message,className) { //Alert mesajlarını organize etme
         const div = document.createElement("div");
         div.className =`alert alert-${className}`;
@@ -79,7 +79,7 @@ const btn = document.querySelector("button").addEventListener("click", (e) => {
     if (title === "" || author === "" || isbn === "") {
         UI.showAlert("Lütfen tüm alanları doldurunuz","warning")
     } else {
-        const book = new Book(title, author, isbn) // Aldıgımız input valuelerle yeni bir kitap nesnesş oluşturduk.
+        const book = new Book(title, author, isbn) // Aldıgımız input valuelerle yeni bir kitap nesnesi oluşturduk.
 
         UI.addBookTolist(book);// Listeye kitap ekleme fonk.
         UI.clearİnputs() // İnput valueleri sıfırlama fonk.

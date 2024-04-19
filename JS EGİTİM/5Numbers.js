@@ -20,7 +20,7 @@ veri = parseInt("5c");    //C'yi görmezden geliyor.Sayı alıyo
 console.log(veri)
 veri = parseInt("c5")    // İsnan hatası
 console.log(veri)
-veri = isNaN("c5")       //Bu sayı degil Verilen değerin sayı olup olmadıgını kontrol ettirme
+veri = isNaN("c5")       //Sayı kontrolü degilse false döner
 console.log(veri)
 veri = isNaN("5")       //
 console.log(veri)

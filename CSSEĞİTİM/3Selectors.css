@@ -1,6 +1,8 @@
 /*
 CSS Yukarıdan aşagıya okur !
 
+Inline > ID > Class > Tag  Önceliklendirmesi ile çalışır.
+
 * Universal (Sayfadaki herşey)
 + (Next-sibling combinator)
 > (Child combinator)

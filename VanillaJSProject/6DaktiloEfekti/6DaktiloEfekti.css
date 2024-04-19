@@ -1,0 +1,38 @@
+html{
+    background-image:url(https://picsum.photos/id/254/1000/2000) ;
+    background-size: cover; /* Resmi ekran boyutuna göre kaplama */
+    background-repeat: no-repeat; /* Resmin tekrarlanmasını önler */
+    background-position: center; /* Resmin ortalanması */
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-size: 40px;
+    margin: 0;
+    overflow: hidden;
+}
+div{
+    color: rgb(217, 95, 115);
+    margin-left: 50px;
+    
+}
+
+@media (max-width : 1200px){
+    html{
+        font-size:30px
+    }
+}
+@media (max-width : 800px){
+    html{
+        font-size:20px
+    }
+}
+@media (max-width : 400px){
+    html{
+        font-size:14px
+    }
+}
+
+/*Cursor*/
+.txt{
+    border-right: 0.2rem solid rgb(217, 95, 115);;
+}
