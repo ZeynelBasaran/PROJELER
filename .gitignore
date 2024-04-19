@@ -1,11 +1,5 @@
-#IDE -VSCode
-
-#img
-*.img
-*.png
-*.mp3
-*.mp4
-Kodluyoruz Eğitimleri/
-*PROJELER/Kodluyoruz Eğitimleri/
-PROJELER/CSSEĞİTİM
-/PROJELER/Kodluyoruz Eğitimleri/
+/Users/zeynelbasaran/Desktop/PROJELER/CSSEĞİTİM
+/Users/zeynelbasaran/Desktop/PROJELER/İBB
+/Users/zeynelbasaran/Desktop/PROJELER/JS EGİTİM
+/Users/zeynelbasaran/Desktop/PROJELER/Kodluyoruz Eğitimleri
+/Users/zeynelbasaran/Desktop/PROJELER/Projeler
