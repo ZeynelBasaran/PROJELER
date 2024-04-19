@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-image: url(https://picsum.photos/id/808/1200/1000);
+    background-position: center center;/*Merkez merkeze */
+    background-size: cover;/*Ekrana yayma*/
+    transition: 0.4s ease;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.slider-container{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 70vh;
+    width: 70vw;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size:cover;
+    position: absolute;
+    top: -15vh;
+    left: -15vw;
+    transition: 0.4s ease;
+    z-index: 1;
+}
+.slide.active{
+    opacity: 1;
+}
+.material-symbols-outlined{
+    position: fixed;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 30px;
+    border: 2px solid orange;
+   cursor: pointer;
+    top:50%;
+    transform: translateY(-50%);
+    color: white;
+}
+.material-symbols-outlined.geri{
+    left: calc(15vw - 65px);
+}
+.material-symbols-outlined.ileri{
+    right: calc(15vw - 65px);
+}
+.material-symbols-outlined:focus{
+    outline: 0;
+}

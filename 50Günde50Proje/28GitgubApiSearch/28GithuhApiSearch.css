@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a72;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.user-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+   
+
+}
+
+.user-form input{
+    width: 100%;
+    display: block;
+    background-color: #4c2885;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),0 15px 40px rgba(0, 0, 0, 0.1);
+}
+.user-form input:focus{
+    outline: none;
+}
+.user-form input::placeholder{
+    color: #fff;
+}
+form{
+    width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    max-width: 700px;
+    background-color: #4c2885;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: 0 1.5rem;
+    padding: 3rem;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #2a2a72;
+    margin-right: 20px;
+
+}
+.user-info{
+    color: #eee;
+}
+.user-info h2{
+    margin-bottom:1rem;
+}
+.user-info p{
+    margin-bottom: 1rem;
+}
+.user-info ul{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    
+}
+
+.user-info ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+.user-info .repos{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.user-info .repos a{
+    color: #fff;
+    text-decoration: none;
+}
+.user-info .repos .repo{
+    background-color: #212a72;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+
+}
+
+@media(max-width:500px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-form{
+        max-width: 400px;
+    }
+}
+

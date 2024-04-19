@@ -1,0 +1,37 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+.btn{
+    color: black;
+   border-radius: 10px;
+    border: 1px solid black;
+    padding: 8px;
+    outline: 0;
+}
+.btn:active{
+    transform: scale(0.97);
+}
+.message{
+    margin: 5px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+   
+}
+.alert{
+    position: fixed;
+    bottom:40px;
+    right:20px;
+}

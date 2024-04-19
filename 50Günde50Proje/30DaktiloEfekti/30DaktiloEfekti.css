@@ -1,0 +1,40 @@
+html{
+    background-color:darksalmon;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.text1{
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    top:50%;
+    position: absolute;
+}
+.text2{
+    position: absolute;
+    background-color: chocolate;
+    padding: 20px;
+    color: black;
+    bottom: 20px;
+    width: 100px;
+}
+.text2 input{
+    outline: 0;
+    border: none;
+    width:40px;
+    height: 20px;
+    padding: 5px;
+    background-color: darksalmon;
+    text-align: center;
+    
+}
+input:focus{
+    outline: none;
+}

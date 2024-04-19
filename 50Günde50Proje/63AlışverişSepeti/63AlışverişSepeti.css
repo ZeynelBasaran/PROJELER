@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(90deg, #D9AFD9 0%, #97D9E1 100%);
+    display: flex;
+    flex-direction: column;
+}
+main{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    height: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header .logo{
+    margin: 0 0 20px 20px;
+    font-size: 2rem;
+}
+.header .search{
+    margin: 0 20px 20px 0px;
+    font-size: 2rem;
+}
+
+section .body{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    height: 1000px;
+}
+.card{
+    width: 33.3333%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+.card h4{
+    font-size: 1.2rem;
+}
+.card p{
+    color: #D9AFD9;
+    margin: 5px 0;
+    font-weight: 800;
+}
+img{
+    height: 80%;
+}
+.card div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card div input{
+    width: 3rem;
+    height: 2rem;
+    outline: 0;
+    padding: 3px;
+
+}
+.card div button{
+    width: 25%;
+    height: 2rem;
+    outline: 0;
+    margin-left: 5px;
+    color: white;
+    background-color: #D9AFD9;
+    border: 0;
+}
+

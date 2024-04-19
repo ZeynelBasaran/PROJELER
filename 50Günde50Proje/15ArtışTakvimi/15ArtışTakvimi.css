@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+section {
+    display: flex;
+    color: white;
+    text-align: center;
+    width: 350px;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 33%;
+}
+
+.log {
+    color: white;
+    font-size: 2rem;
+}
+
+@media(max-width:580px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .logo{
+        margin-top: 30px;
+    }
+}
