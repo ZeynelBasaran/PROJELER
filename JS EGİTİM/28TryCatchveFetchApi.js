@@ -11,6 +11,19 @@ try {
 
 */
 
+//Basit Fetch yapısı
+const API_URL = "https://jsonplaceholder.typicode.com/posts/1"
+fetch(API_URL)
+.then(res=> res.json())//Dosyayı json formatına döndürüyoruz.
+.then(data=>console.log(data))//then ile sonucu yakalıyoruz.
+.catch(err => console.error(err))// Hata varsa burdan yakalıyoruz
+
+/*
+ASYNC AWAİT
+Async yanlızca funcsiyonlarda kullanılır. Fonksiyonu primise'e çevirir. Consol'da promise sonucunu gösterir 
+Await olmadan kullanılmaz async await beraber kullanılır. 
+
+*/
 //JS Dosyadan veri çekmek
 fetch("/JS EGİTİM/settings.json").then(
     response => response.json()
@@ -18,6 +31,9 @@ fetch("/JS EGİTİM/settings.json").then(
     console.log(responseJson)
     console.log(responseJson.username)
 })
+
+
+
 
 //Fonk ile fetch atmak
 const searchStates = async searchText => {
