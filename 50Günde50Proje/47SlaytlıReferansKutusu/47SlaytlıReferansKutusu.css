@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.container {
+    max-width: 768px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #476ce4;
+    padding: 50px 80px;
+    position: relative;
+}
+
+.progress{
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+}
+
+.kutu {
+    margin-top: 20px;
+}
+.kutu p{
+    margin-bottom: 30px;
+    line-height: 28px;/*Satır aralıgı*/
+    text-align: justify;/*Metin yayılımı için*/
+}
+.kutu div {
+    display: flex;
+    justify-content: center; 
+}
+
+.kutu div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.kutu div div small{
+    margin-top: 5px;
+}
+
+.kutu img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.fa-solid{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 30px;
+    position: absolute;
+}
+.fa-quote-left{
+    left: 45px;
+}
+.fa-quote-right{
+    right: 50px;
+    bottom: 130px;
+}
+@keyframes grow{
+    0%{
+        transform: scaleX(0);
+    }
+}

@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+}
+
+section{
+    width: 350px;
+    margin-top: 100px;
+    border: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0,0.3);
+    border-radius: 10px;
+    width: 350px;
+    overflow: hidden;
+    
+
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(5, 58, 101);
+    color: #fff;
+    padding: 30px;
+    
+}
+.header h1{
+    margin-bottom: 10px;
+}
+
+.header h5{
+    margin-bottom: 10px;
+}
+
+section .header input{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    height: 2rem;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(43, 143, 224);
+    color: white;
+}
+
+.list{
+    flex-wrap: wrap;
+    height: 80vh;
+    overflow-x: hidden; /* Yatay kaydırma çubuğunu gizle */
+    overflow-y: auto; 
+}
+.person{
+    display: flex;
+    padding: 15px;
+    border-bottom: gray 1px solid;
+}
+.person img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.person div{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person div span{
+  margin-top: 4px;
+}
+.hide{
+    display: none;
+}
+
+

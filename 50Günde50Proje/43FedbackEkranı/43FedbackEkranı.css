@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: wheat;
+    font-size: 16px;
+    overflow: hidden;
+    margin: 0;
+}
+section{
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kutu{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+section span{
+    cursor: pointer;
+    display: block;   
+}
+section div div small{
+    display: block;
+    font-size: 1.5rem;
+}
+section button{
+    margin:20px;
+    padding:0.5rem 1rem;
+    background-color: black;
+    color:white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover,.material-symbols-outlined:active{
+    border-radius:4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
+}
+button:active{
+    transform: scale(0.95);
+}
+.active{
+    border-radius:4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
+    background-color: aqua;
+}
+.material-icons.md-48{ 
+    font-size: 48px;
+}
+.heart{
+    background-color: white;
+    color: red;
+}
