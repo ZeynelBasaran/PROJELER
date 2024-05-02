@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 16px;
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    background-color: #fff;
+    max-width: 1000px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.container .codecont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+
+}
+.container .codecont input {
+    border-radius: 5px;
+    width: 100px;
+    height: 120px;
+    padding: 20px;
+    border: solid #eee;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1%;
+    font-weight: 300;
+    -moz-appearance: textfield;/* Mozilla için Rakam girilirken yanında ileri geri butonunu kaldırmak için */
+
+}
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button{
+    -webkit-appearance: none;/* Chrome ve Safari için Rakam girilirken yanında ileri geri butonunu kaldırmak için */
+    margin: 0;
+
+}
+
+.code:valid{
+    border-color: #3498db;/* Focus olunan inputta border renkleri */
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+.info{
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px;
+    max-width: 400px;
+    color: #777;
+    border-radius: 5px;
+}
+
+@media(max-width:600px){
+    .codecont{
+        flex-wrap: wrap;
+    }
+    .code{
+        font-size: 60px;
+        height: 80px;
+        max-width: 70px;
+    }
+}
