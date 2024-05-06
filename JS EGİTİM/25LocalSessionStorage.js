@@ -46,6 +46,9 @@ let user = "kodluyoruz"
 localStorage.setItem('userInfo', user)
 let userStatus = {userName: 'kodluyoruz', isActive: true}
 localStorage.setItem('user', JSON.stringify(userStatus))
-//JSON.parse() Farklı veri türlerini String ifadeyi çevirmek için kullanılır
+
+
+//JSON.parse() Farklı veri türlerini String ifadeye çevirmek için kullanılır
+//JSON.stringify(): Bu fonksiyon, JavaScript nesnelerini JSON biçimine dönüştürmek için kullanılır. Yani, bir JavaScript nesnesini veya diziye JSON biçimine çevirir.
 
 
