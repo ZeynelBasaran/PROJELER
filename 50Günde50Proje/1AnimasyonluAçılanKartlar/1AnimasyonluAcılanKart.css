@@ -1,58 +1,68 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    width:100%;
+
+body {
+    height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    justify-content: center;
+    display: flex;
     align-items: center;
-    
+    justify-content: center;
+    overflow: hidden;
+
 }
 
 .main {
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-  
-}   
+    width: 90vw;
 
-.panel{
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
     cursor: pointer;
     transition: flex 0.7s ease-in;
-    color:white;
-    max-width: 100px;
-    height: 80vh;
-    margin: 10px;
+    color: white;
+    flex: 0.5;
     position: relative;
-    
-}
-.panel img{
-    max-width: 100%;
-    height: 100%;
-    border-radius: 75px;
-  
+    margin: 10px;
+    border-radius: 50px;
+    transition: flex 0.7s ease-in;
 
 }
-.active{
-    max-width: 1000px;
-    
-      
+
+
+.panel.active {
+    flex: 5;
 }
-.main .panel.active h3{
+
+.main .panel.active h3 {
     opacity: 1;
-    
+    transition: opacity 0.3s ease-in 0.4s;
+
 }
-.main .panel h3{
+
+.main .panel h3 {
     text-align: center;
     font-size: 24px;
     position: absolute;
-    bottom:10px;
-    left:40px;
+    bottom: 10px;
+    left: 40px;
     margin: 0;
     transition: opacity 0.3s ease-in 0.4s;
-    text-transform:capitalize;
+    text-transform: capitalize;
     opacity: 0;
+}
+
+@media(max-width:480px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),.panel:nth-of-type(5){
+        display: none;
+    }
 }

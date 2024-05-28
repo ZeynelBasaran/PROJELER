@@ -5,7 +5,7 @@ const input = document.querySelector(`input`)
 //JSON.parse(): Bu fonksiyon, JSON biçimindeki bir metni JavaScript nesnesine dönüştürmek için kullanılır. LS'den array list olarak çekilir ve gönderilir.
 const todos = JSON.parse(localStorage.getItem("todos"))
 console.log(todos)
-if(todos){
+if (todos) {
     todos.forEach(todo => addTodo(todo))
 }
 
@@ -24,7 +24,7 @@ function addTodo(todo) {
 
     if (todoText) {
 
-        
+
         let domEl = document.createElement("li")
 
         if (todo && todo.completed) {//LS'den yüklenirken line kontrolü
@@ -35,7 +35,7 @@ function addTodo(todo) {
         list.appendChild(domEl)
 
         //Element Silme 
-        domEl.addEventListener("click", () =>{
+        domEl.addEventListener("click", () => {
             domEl.classList.toggle("line")
             updadeLS()
         })
@@ -51,14 +51,14 @@ function addTodo(todo) {
     }
 }
 
-function updadeLS(){
+function updadeLS() {
     todossEl = document.querySelectorAll(`li`)
 
     const todos = []
 
-    todossEl.forEach(todoEl =>{
+    todossEl.forEach(todoEl => {
         todos.push({
-            text:todoEl.innerText,
+            text: todoEl.innerText,
             completed: todoEl.classList.contains("line")
         })
     })

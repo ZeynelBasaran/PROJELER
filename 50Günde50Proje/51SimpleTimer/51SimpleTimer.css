@@ -1,0 +1,17 @@
+:root{
+    --degress:0deg;
+}
+
+.bg-conic{
+    background: conic-gradient(
+        transparent 0deg,
+        transparent var(--degress),
+        pink var (--degress),
+        purple 360deg
+    );
+}
+
+.hand{
+    transform-origin: bottom center;
+    transform: rotate(var(--degress));
+}

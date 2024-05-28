@@ -1,3 +1,4 @@
+
 const quizData = [
     {
         "quess": "1-Which language runs in a web browser",
@@ -5,7 +6,7 @@ const quizData = [
         "B": "C",
         "C": "Python",
         "D": "Javascript",
-        "correct":"d"
+        "correct": "d"
     },
     {
         "quess": "2-What does CSS stand for",
@@ -13,7 +14,7 @@ const quizData = [
         "B": "Casceding Style Sheets",
         "C": "Cascadşng Simple Sheets",
         "D": "Cars Suvs Sailbaits",
-        "correct":"b",
+        "correct": "b",
     },
     {
         "quess": "3-What does HTML stand for",
@@ -21,7 +22,7 @@ const quizData = [
         "B": "Casceding Style Sheets",
         "C": "Cascadşng Simple Sheets",
         "D": "Cars Suvs Sailbaits",
-        "correct":"a"
+        "correct": "a"
 
     },
     {
@@ -30,90 +31,77 @@ const quizData = [
         "B": "1996",
         "C": "1994",
         "D": "none the above",
-        "correct":"b"
+        "correct": "b"
 
     }
 ]
 
 const quiz = document.querySelector(".container")
-const answerEl = document.querySelectorAll("answer")
+const answerEls = document.querySelectorAll(".answer")
 const quesEl = document.querySelector(".question")
 const a_text = document.querySelector("#a_text")
 const b_text = document.querySelector("#b_text")
 const c_text = document.querySelector("#c_text")
 const d_text = document.querySelector("#d_text")
-const submitBtn = document.querySelector(".submit")
+const submitBtn = document.querySelector(".submitt")
 
 let curretQuiz = 0
 let score = 0
 
 loadQuiz()
-
-function loadQuiz(){
+function loadQuiz() {
     deselectAns()//Tüm elemenlerdeki checked kaldırmak için
-    
+
     const curretQuizData = quizData[curretQuiz]
-    console.log(curretQuizData)
 
-    quesEl.innerHTML=curretQuizData.quess
-    a_text.innerHTML=curretQuizData.A
-    b_text.innerHTML=curretQuizData.B
-    c_text.innerHTML=curretQuizData.C
-    d_text.innerHTML=curretQuizData.D
+    quesEl.innerHTML = curretQuizData.quess
+    a_text.innerHTML = curretQuizData.A
+    b_text.innerHTML = curretQuizData.B
+    c_text.innerHTML = curretQuizData.C
+    d_text.innerHTML = curretQuizData.D
 }
 
-function deselectAns(){
-    answerEl.forEach(answerEl=> answerEl.checked = false)
+function deselectAns() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
 }
 
-submitBtn.addEventListener("click",()=>{
+//Event başlatarak verilen cevabı kontrol ettirip bir sonraki soruya geçiş
+submitBtn.addEventListener("click", (e)=> {
+    e.preventDefault()
+   
     const answer = getSelected()
+  
+
+    if (answer === quizData[curretQuiz].correct) {
+        score++
+    }
+
+    curretQuiz++
+
+    if (curretQuiz < quizData.length) {
+        loadQuiz()
+    } else {
+        quiz.innerHTML = `
+            <h2>You answered correcctly at ${score}/${quizData.length} questions </h2>
+
+            <button onclick="location.reload()">Reload</button>
+            `
+    }
+
 })
 
-function getSelected(){
-    
+//Cevabı almak için Q
+function getSelected() {
+    let answer;
+    answerEls.forEach(answerEl => {
+        if (answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+
+    return answer
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-/*
-
-`
-    <h2 class="baslik">${quizData[number].quess}</h2>
-    <ul class="list">
-            <li>
-                <input type="radio" name="answer" id="a" value="${quizData[number].A}"> 
-                <label for="a" id="a_text">${quizData[number].A}</label>
-            </li>
-            
-            <li>
-                <input type="radio" name="answer" id="b" value="${quizData[number].A}"> 
-                <label for="b" id="b_text">${quizData[number].B}</label>
-            </li>
-           
-            <li>
-                <input type="radio" name="answer" id="c" value="${quizData[number].A}">
-                <label for="c" id="c_text">${quizData[number].C}</label>
-            </li>
-         
-            <li>
-                <input type="radio" name="answer" id="d" value="${quizData[number].A}"> 
-                <label for="d" id="d_text">${quizData[number].D}</label>
-            </li>
-    </ul>
-    <button type="submit" class="send">Send</button>
-
-    `
-
-
-    */
